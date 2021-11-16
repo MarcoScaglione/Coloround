@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9507D1B12743D0CD002DE679 /* ColoroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1B02743D0CD002DE679 /* ColoroundApp.swift */; };
+		9507D1B32743D0CD002DE679 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1B22743D0CD002DE679 /* ContentView.swift */; };
+		9507D1B52743D0CD002DE679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9507D1B42743D0CD002DE679 /* Assets.xcassets */; };
+		9507D1B82743D0CE002DE679 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9507D1B72743D0CE002DE679 /* Preview Assets.xcassets */; };
+		9507D1C22743D0CE002DE679 /* ColoroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1C12743D0CE002DE679 /* ColoroundTests.swift */; };
+		9507D1CC2743D0CE002DE679 /* ColoroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1CB2743D0CE002DE679 /* ColoroundUITests.swift */; };
+		9507D1CE2743D0CE002DE679 /* ColoroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1CD2743D0CE002DE679 /* ColoroundUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9507D1BE2743D0CE002DE679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9507D1A52743D0CC002DE679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9507D1AC2743D0CD002DE679;
+			remoteInfo = Coloround;
+		};
+		9507D1C82743D0CE002DE679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9507D1A52743D0CC002DE679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9507D1AC2743D0CD002DE679;
+			remoteInfo = Coloround;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9507D1AD2743D0CD002DE679 /* Coloround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coloround.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9507D1B02743D0CD002DE679 /* ColoroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoroundApp.swift; sourceTree = "<group>"; };
+		9507D1B22743D0CD002DE679 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9507D1B42743D0CD002DE679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9507D1B72743D0CE002DE679 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9507D1BD2743D0CE002DE679 /* ColoroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColoroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9507D1C12743D0CE002DE679 /* ColoroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoroundTests.swift; sourceTree = "<group>"; };
+		9507D1C72743D0CE002DE679 /* ColoroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColoroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9507D1CB2743D0CE002DE679 /* ColoroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoroundUITests.swift; sourceTree = "<group>"; };
+		9507D1CD2743D0CE002DE679 /* ColoroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9507D1AA2743D0CD002DE679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9507D1BA2743D0CE002DE679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9507D1C42743D0CE002DE679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9507D1A42743D0CC002DE679 = {
+			isa = PBXGroup;
+			children = (
+				9507D1AF2743D0CD002DE679 /* Coloround */,
+				9507D1C02743D0CE002DE679 /* ColoroundTests */,
+				9507D1CA2743D0CE002DE679 /* ColoroundUITests */,
+				9507D1AE2743D0CD002DE679 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9507D1AE2743D0CD002DE679 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9507D1AD2743D0CD002DE679 /* Coloround.app */,
+				9507D1BD2743D0CE002DE679 /* ColoroundTests.xctest */,
+				9507D1C72743D0CE002DE679 /* ColoroundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9507D1AF2743D0CD002DE679 /* Coloround */ = {
+			isa = PBXGroup;
+			children = (
+				9507D1B02743D0CD002DE679 /* ColoroundApp.swift */,
+				9507D1B22743D0CD002DE679 /* ContentView.swift */,
+				9507D1B42743D0CD002DE679 /* Assets.xcassets */,
+				9507D1B62743D0CE002DE679 /* Preview Content */,
+			);
+			path = Coloround;
+			sourceTree = "<group>";
+		};
+		9507D1B62743D0CE002DE679 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9507D1B72743D0CE002DE679 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9507D1C02743D0CE002DE679 /* ColoroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				9507D1C12743D0CE002DE679 /* ColoroundTests.swift */,
+			);
+			path = ColoroundTests;
+			sourceTree = "<group>";
+		};
+		9507D1CA2743D0CE002DE679 /* ColoroundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9507D1CB2743D0CE002DE679 /* ColoroundUITests.swift */,
+				9507D1CD2743D0CE002DE679 /* ColoroundUITestsLaunchTests.swift */,
+			);
+			path = ColoroundUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9507D1AC2743D0CD002DE679 /* Coloround */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9507D1D12743D0CE002DE679 /* Build configuration list for PBXNativeTarget "Coloround" */;
+			buildPhases = (
+				9507D1A92743D0CD002DE679 /* Sources */,
+				9507D1AA2743D0CD002DE679 /* Frameworks */,
+				9507D1AB2743D0CD002DE679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coloround;
+			productName = Coloround;
+			productReference = 9507D1AD2743D0CD002DE679 /* Coloround.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9507D1BC2743D0CE002DE679 /* ColoroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9507D1D42743D0CE002DE679 /* Build configuration list for PBXNativeTarget "ColoroundTests" */;
+			buildPhases = (
+				9507D1B92743D0CE002DE679 /* Sources */,
+				9507D1BA2743D0CE002DE679 /* Frameworks */,
+				9507D1BB2743D0CE002DE679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9507D1BF2743D0CE002DE679 /* PBXTargetDependency */,
+			);
+			name = ColoroundTests;
+			productName = ColoroundTests;
+			productReference = 9507D1BD2743D0CE002DE679 /* ColoroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9507D1C62743D0CE002DE679 /* ColoroundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9507D1D72743D0CE002DE679 /* Build configuration list for PBXNativeTarget "ColoroundUITests" */;
+			buildPhases = (
+				9507D1C32743D0CE002DE679 /* Sources */,
+				9507D1C42743D0CE002DE679 /* Frameworks */,
+				9507D1C52743D0CE002DE679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9507D1C92743D0CE002DE679 /* PBXTargetDependency */,
+			);
+			name = ColoroundUITests;
+			productName = ColoroundUITests;
+			productReference = 9507D1C72743D0CE002DE679 /* ColoroundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9507D1A52743D0CC002DE679 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					9507D1AC2743D0CD002DE679 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					9507D1BC2743D0CE002DE679 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 9507D1AC2743D0CD002DE679;
+					};
+					9507D1C62743D0CE002DE679 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 9507D1AC2743D0CD002DE679;
+					};
+				};
+			};
+			buildConfigurationList = 9507D1A82743D0CC002DE679 /* Build configuration list for PBXProject "Coloround" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9507D1A42743D0CC002DE679;
+			productRefGroup = 9507D1AE2743D0CD002DE679 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9507D1AC2743D0CD002DE679 /* Coloround */,
+				9507D1BC2743D0CE002DE679 /* ColoroundTests */,
+				9507D1C62743D0CE002DE679 /* ColoroundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9507D1AB2743D0CD002DE679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9507D1B82743D0CE002DE679 /* Preview Assets.xcassets in Resources */,
+				9507D1B52743D0CD002DE679 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9507D1BB2743D0CE002DE679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9507D1C52743D0CE002DE679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9507D1A92743D0CD002DE679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9507D1B32743D0CD002DE679 /* ContentView.swift in Sources */,
+				9507D1B12743D0CD002DE679 /* ColoroundApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9507D1B92743D0CE002DE679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9507D1C22743D0CE002DE679 /* ColoroundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9507D1C32743D0CE002DE679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9507D1CE2743D0CE002DE679 /* ColoroundUITestsLaunchTests.swift in Sources */,
+				9507D1CC2743D0CE002DE679 /* ColoroundUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9507D1BF2743D0CE002DE679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9507D1AC2743D0CD002DE679 /* Coloround */;
+			targetProxy = 9507D1BE2743D0CE002DE679 /* PBXContainerItemProxy */;
+		};
+		9507D1C92743D0CE002DE679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9507D1AC2743D0CD002DE679 /* Coloround */;
+			targetProxy = 9507D1C82743D0CE002DE679 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9507D1CF2743D0CE002DE679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9507D1D02743D0CE002DE679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9507D1D22743D0CE002DE679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Coloround/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarcoScaglione.Coloround;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9507D1D32743D0CE002DE679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Coloround/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarcoScaglione.Coloround;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9507D1D52743D0CE002DE679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarcoScaglione.ColoroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coloround.app/Coloround";
+			};
+			name = Debug;
+		};
+		9507D1D62743D0CE002DE679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarcoScaglione.ColoroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coloround.app/Coloround";
+			};
+			name = Release;
+		};
+		9507D1D82743D0CE002DE679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarcoScaglione.ColoroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Coloround;
+			};
+			name = Debug;
+		};
+		9507D1D92743D0CE002DE679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarcoScaglione.ColoroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Coloround;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9507D1A82743D0CC002DE679 /* Build configuration list for PBXProject "Coloround" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9507D1CF2743D0CE002DE679 /* Debug */,
+				9507D1D02743D0CE002DE679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9507D1D12743D0CE002DE679 /* Build configuration list for PBXNativeTarget "Coloround" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9507D1D22743D0CE002DE679 /* Debug */,
+				9507D1D32743D0CE002DE679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9507D1D42743D0CE002DE679 /* Build configuration list for PBXNativeTarget "ColoroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9507D1D52743D0CE002DE679 /* Debug */,
+				9507D1D62743D0CE002DE679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9507D1D72743D0CE002DE679 /* Build configuration list for PBXNativeTarget "ColoroundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9507D1D82743D0CE002DE679 /* Debug */,
+				9507D1D92743D0CE002DE679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9507D1A52743D0CC002DE679 /* Project object */;
+}
