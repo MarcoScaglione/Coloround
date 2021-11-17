@@ -11,6 +11,7 @@ struct ModalSetting : View {
     @State var showmodalview = false
     @State var showActionSheet = false
     
+    
     var ActionSheet: SwiftUI.ActionSheet {
         SwiftUI.ActionSheet(
             title: Text("Action Sheet's title"),
@@ -51,6 +52,7 @@ struct ModalSetting : View {
     }
     
     struct ModalView: View {
+        @State var duration: Double = 0
         @State var showmodalview = false
         @Environment(\.presentationMode) private var presentationMode
         
@@ -59,8 +61,21 @@ struct ModalSetting : View {
                 
                 VStack(){
                     
-                    
-
+                    Form{
+                        Section( header: Text("Audio")){
+                        
+                            NavigationLink(destination: tutorial()) {
+                                Text("Tune")
+                                Label("", systemImage: "chevron")
+                            }
+                            HStack{
+                                Text("Sound Duration")
+                                Spacer()
+                                Text("\(duration) ")
+                            }
+                            
+                        }
+                    }
 
                 }
                 .navigationTitle("Settings")
@@ -90,3 +105,4 @@ struct ModalSetting : View {
         }
     }
 }
+
