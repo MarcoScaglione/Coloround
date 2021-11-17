@@ -11,7 +11,7 @@ import SwiftUI
 struct ColoroundApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            tutorial()
         }
     }
 }
