@@ -27,21 +27,21 @@ struct ContentView: View {
 struct FirstScreen: View {
     var body: some View {
         VStack {
-        Text("Welcome to")
-            .font(.title)
-            .fontWeight(.bold)
-            .padding(.top, 150.0)
-        Image("sfondop")
-            .resizable()
-            .aspectRatio(1.7777777778, contentMode: .fill)
-            .frame(height: 207)
-        Text ("This app is made to help Colorblind people to easily recognize and memorize colors using sounds")
-            .fontWeight(.bold)
-            .padding(.top, 50.0)
-        Text ("Swipe to the left to discover what you can do with it!")
-            .fontWeight(.bold)
-            .padding(.top, 50.0)
-        Spacer()
+            Text("Welcome to")
+                .font(.title)
+                .fontWeight(.bold)
+                .padding(.top, 150.0)
+            Image("sfondop")
+                .resizable()
+                .aspectRatio(1.7777777778, contentMode: .fill)
+                .frame(height: 207)
+            Text ("This app is made to help Colorblind people to easily recognize and memorize colors using sounds")
+                .fontWeight(.bold)
+                .padding(.top, 50.0)
+            Text ("Swipe to the left to discover what you can do with it!")
+                .fontWeight(.bold)
+                .padding(.top, 50.0)
+            Spacer()
         }
     }
 }
@@ -50,18 +50,18 @@ struct SecondScreen: View {
     var body: some View {
         VStack{
             
-        Text ("Discover colors of your favourite pics!")
-            .foregroundColor(.black)
-            .font(.title)
-            .fontWeight(.bold)
-            .padding(.top, -100)
+            Text ("Discover colors of your favourite pics!")
+                .foregroundColor(.black)
+                .font(.title)
+                .fontWeight(.bold)
+                .padding(.top, -100)
             
-        Text ("You can:")
+            Text ("You can:")
                 .padding(.top, 10.0)
             
             HStack{
                 Image (systemName: "camera.viewfinder")
-                    
+                
                     .padding(.leading, 50.0)
                 Text ("Choose your pic from your own album")
                     .padding(.leading, 50.0)
@@ -76,13 +76,13 @@ struct SecondScreen: View {
                 Spacer()
             }
             .padding(.top, 40.0)
+        }
     }
-}
 }
 struct ThirdScreen: View {
     var body: some View {
         VStack{
-            Text("Move to the pointer to discover!")
+            Text("Move the pointer to discover!")
                 .foregroundColor(.black)
                 .font(.title)
                 .fontWeight(.bold)
@@ -102,10 +102,10 @@ struct ThirdScreen: View {
                 
             }
             HStack{
-            Text("B")
+                Text("B")
                     .padding()
                     .foregroundColor(.blue)
-            Text("86")
+                Text("86")
             }
             VStack{
                 Text("Once you set the pointer you'll find the details just before")
