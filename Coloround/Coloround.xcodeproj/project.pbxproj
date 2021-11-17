@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9507D1B12743D0CD002DE679 /* ColoroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1B02743D0CD002DE679 /* ColoroundApp.swift */; };
-		9507D1B32743D0CD002DE679 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1B22743D0CD002DE679 /* ContentView.swift */; };
+		9507D1B32743D0CD002DE679 /* tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1B22743D0CD002DE679 /* tutorial.swift */; };
 		9507D1B52743D0CD002DE679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9507D1B42743D0CD002DE679 /* Assets.xcassets */; };
 		9507D1B82743D0CE002DE679 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9507D1B72743D0CE002DE679 /* Preview Assets.xcassets */; };
 		9507D1C22743D0CE002DE679 /* ColoroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1C12743D0CE002DE679 /* ColoroundTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		9507D1AD2743D0CD002DE679 /* Coloround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coloround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9507D1B02743D0CD002DE679 /* ColoroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoroundApp.swift; sourceTree = "<group>"; };
-		9507D1B22743D0CD002DE679 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9507D1B22743D0CD002DE679 /* tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorial.swift; sourceTree = "<group>"; };
 		9507D1B42743D0CD002DE679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9507D1B72743D0CE002DE679 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9507D1BD2743D0CE002DE679 /* ColoroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColoroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				9507D1B02743D0CD002DE679 /* ColoroundApp.swift */,
-				9507D1B22743D0CD002DE679 /* ContentView.swift */,
+				9507D1B22743D0CD002DE679 /* tutorial.swift */,
 				9507D1B42743D0CD002DE679 /* Assets.xcassets */,
 				9507D1B62743D0CE002DE679 /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9507D1B32743D0CD002DE679 /* ContentView.swift in Sources */,
+				9507D1B32743D0CD002DE679 /* tutorial.swift in Sources */,
 				9507D1B12743D0CD002DE679 /* ColoroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
