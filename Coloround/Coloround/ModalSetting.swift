@@ -55,20 +55,28 @@ struct ModalSetting : View {
         @Environment(\.presentationMode) private var presentationMode
         
         var body: some View {
-            ZStack{
-                Color.black.edgesIgnoringSafeArea(.all)
+            NavigationView {
+                
                 VStack(){
-                    Group {
-                      Button(action: {
-                          self.presentationMode.wrappedValue.dismiss()
-                              
-                      })
+                    
+                    
+
+
+                }
+                .navigationTitle("Settings")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        
+                        Button(action: {
+                            self.presentationMode.wrappedValue.dismiss()
+                        
+                        })
                         {
                             Text("Close")
-                                
+                            
                         }
                     }
-                }.offset(x: -150, y: -350)
+                }
             }
         }
     }
