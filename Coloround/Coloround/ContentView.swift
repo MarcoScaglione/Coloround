@@ -17,6 +17,7 @@ struct ContentView: View {
             FirstScreen()
             SecondScreen()
             ThirdScreen()
+            FourthScreen()
         }
         .tabViewStyle(PageTabViewStyle())
         .indexViewStyle(.page(backgroundDisplayMode: .always))
@@ -30,7 +31,7 @@ struct FirstScreen: View {
             .font(.title)
             .fontWeight(.bold)
             .padding(.top, 150.0)
-        Image("sfondo")
+        Image("sfondop")
             .resizable()
             .aspectRatio(1.7777777778, contentMode: .fill)
             .frame(height: 207)
@@ -51,19 +52,75 @@ struct SecondScreen: View {
             
         Text ("Discover colors of your favourite pics!")
             .foregroundColor(.black)
-        Text ("You can")
+            .font(.title)
+            .fontWeight(.bold)
+            .padding(.top, -100)
+            
+        Text ("You can:")
+                .padding(.top, 10.0)
             
             HStack{
-             Image (systemName: "camera.viewfinder")
+                Image (systemName: "camera.viewfinder")
+                    
+                    .padding(.leading, 50.0)
                 Text ("Choose your pic from your own album")
+                    .padding(.leading, 50.0)
                 Spacer()
             }
+            .padding(.top, 40.0)
+            HStack{
+                Image(systemName: "camera.viewfinder")
+                    .padding(.leading, 50.0)
+                Text("Take a photo")
+                    .padding(.leading, 50.0)
+                Spacer()
+            }
+            .padding(.top, 40.0)
     }
 }
 }
 struct ThirdScreen: View {
     var body: some View {
-        Color.blue
+        VStack{
+            Text("Move to the pointer to discover!")
+                .foregroundColor(.black)
+                .font(.title)
+                .fontWeight(.bold)
+                .padding(.leading, 30.0)
+            Image("Flower")
+            HStack{
+                Text("R")
+                    .foregroundColor(.red)
+                    .padding(15.0)
+                Text ("254")
+            }
+            HStack{
+                Text("G")
+                    .padding(15.0)
+                    .foregroundColor(.green)
+                Text ("51")
+                
+            }
+            HStack{
+            Text("B")
+                    .padding()
+                    .foregroundColor(.blue)
+            Text("86")
+            }
+            VStack{
+                Text("Once you set the pointer you'll find the details just before")
+                    .fontWeight(.bold)
+            }
+        }
+    }
+}
+
+
+struct FourthScreen: View {
+    var body: some View {
+        VStack{
+            Text("Listen to the colors")
+        }
     }
 }
 
