@@ -14,6 +14,7 @@
 		9507D1C22743D0CE002DE679 /* ColoroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1C12743D0CE002DE679 /* ColoroundTests.swift */; };
 		9507D1CC2743D0CE002DE679 /* ColoroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1CB2743D0CE002DE679 /* ColoroundUITests.swift */; };
 		9507D1CE2743D0CE002DE679 /* ColoroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1CD2743D0CE002DE679 /* ColoroundUITestsLaunchTests.swift */; };
+		95AC38052744FDC70057A3EA /* ModalSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC38032744FDB70057A3EA /* ModalSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		9507D1C72743D0CE002DE679 /* ColoroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColoroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9507D1CB2743D0CE002DE679 /* ColoroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoroundUITests.swift; sourceTree = "<group>"; };
 		9507D1CD2743D0CE002DE679 /* ColoroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		95AC38032744FDB70057A3EA /* ModalSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				9507D1B02743D0CD002DE679 /* ColoroundApp.swift */,
 				9507D1B22743D0CD002DE679 /* ContentView.swift */,
+				95AC38032744FDB70057A3EA /* ModalSetting.swift */,
 				9507D1B42743D0CD002DE679 /* Assets.xcassets */,
 				9507D1B62743D0CE002DE679 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				9507D1B32743D0CD002DE679 /* ContentView.swift in Sources */,
 				9507D1B12743D0CD002DE679 /* ColoroundApp.swift in Sources */,
+				95AC38052744FDC70057A3EA /* ModalSetting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
