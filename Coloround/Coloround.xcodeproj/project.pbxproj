@@ -79,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				9507D1AF2743D0CD002DE679 /* Coloround */,
-				9507D1C02743D0CE002DE679 /* ColoroundTests */,
 				9507D1CA2743D0CE002DE679 /* ColoroundUITests */,
 				9507D1AE2743D0CD002DE679 /* Products */,
 			);
@@ -103,6 +102,7 @@
 				95AC38032744FDB70057A3EA /* ModalSetting.swift */,
 				78A98FC22745217D0056F85F /* MainPage.swift */,
 				9507D1B42743D0CD002DE679 /* Assets.xcassets */,
+				9507D1C02743D0CE002DE679 /* ColoroundTests */,
 				9507D1B62743D0CE002DE679 /* Preview Content */,
 			);
 			path = Coloround;
