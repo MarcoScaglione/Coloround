@@ -23,11 +23,10 @@ struct Tutorial: View {
         .indexViewStyle(.page(backgroundDisplayMode: .always))
     }
 }
-
 struct FirstScreen: View {
     var body: some View {
+        
         VStack(spacing: 10){
-            
             Text("Welcome to")
                 .font(.title)
                 .fontWeight(.bold)
@@ -49,21 +48,25 @@ struct FirstScreen: View {
                 .font(.system(size: 22))
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                     Text("Skip the tutorial")
+            
+           
                         .multilineTextAlignment(.center)
                         .padding([.top, .leading, .bottom], 33.0)
 //                    NavigationLink(destination:
 //                    album()) {
 //                    Text("tutorial")
-                }
+                } // vstack
+            
                 .padding([.top, .trailing], 50.0)
                 Spacer()
-            
-        }
-    }
+      
+        } //view
+    } //firstscreen
 }
 
 struct SecondScreen: View {
     var body: some View {
+        
         VStack(spacing: 50){
             
             Text ("Discover colors of your favourite pics!")
@@ -105,6 +108,7 @@ struct SecondScreen: View {
                 Spacer()
             }
             .padding(.top, 40.0)
+        
         }
     }
 }
@@ -138,7 +142,7 @@ struct ThirdScreen: View {
                     }
                     HStack{
                 Text("B")
-                    .padding()
+                            .padding(.top)
                     .foregroundColor(.blue)
                 Text("86")
                     }
@@ -157,7 +161,7 @@ struct ThirdScreen: View {
 struct FourthScreen: View {
     var body: some View {
         VStack{
-            Text("Hear the colors")
+            Text("Listen to colors")
                 .font(.title)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
@@ -170,6 +174,9 @@ struct FourthScreen: View {
             Image("rgb")
                 .padding(.top, 10.0)
                 .scaleEffect()
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Text("Start")
+                    .padding(.top, 50.0)
         }
     }
 }
@@ -178,4 +185,5 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Tutorial()
     }
+}
 }
