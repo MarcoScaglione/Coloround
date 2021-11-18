@@ -8,32 +8,40 @@
 import SwiftUI
 
 struct CreditsView: View {
-    @State var duration: Double = 0
-    @State var showmodalview = false
-    @Environment(\.presentationMode) private var presentationMode
+   
+    
     
     var body: some View {
-        NavigationView {
+        
+            Credits().navigationTitle("Credits")
+                .navigationBarTitleDisplayMode(.large)
+        
+    }
+}
+
+
+struct Credits: View {
+    var body: some View {
+        
+        
+        
+        VStack(){
             
-            VStack(){
-                
-                Form{
-                    Section( header: Text("Made by")){
+            Form{
+                Section( header: Text("Made by")){
                     
-                        Text("Ilaria Scognamiglio")
-                        Text("Marco Scaglione")
-                        Text("Andrea Maddaloni")
-                        Text("Daniel Makhovskyi")
-                        
-                    }
+                    Text("Ilaria Scognamiglio")
+                    Text("Marco Scaglione")
+                    Text("Andrea Maddaloni")
+                    Text("Daniel Makhovskyi")
                     
                 }
-
             }
-            .navigationTitle("Credits")
+            
         }
     }
 }
+
 struct ContentView_PreviewCredits: PreviewProvider {
     static var previews: some View {
         CreditsView()

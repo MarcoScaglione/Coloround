@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct TuneView: View {
-    @State var duration: Double = 0
+    @State var duration : Double = 0
     @State var showmodalview = false
+    @State var selectedTuneRed = 0
+    @State var selectedTuneGreen = 1
+    @State var selectedTuneBlue = 2
+    
+   
+    var tuneNotes = ["A","C#","E"]
     
     @Environment(\.presentationMode) private var presentationMode
     
@@ -20,31 +26,29 @@ struct TuneView: View {
                 
                 Form{
                     Section( header: Text("Frequencies")){
-                        HStack{
-                        
-                            NavigationLink(destination: Tutorial()) {
-                                Text("Red")
-                                Label("", systemImage: "chevron")
-                                Spacer()
-//                                Text("\(tuneRed) ")
-                                
+                        Picker(selection: $selectedTuneRed, label: Text("Red")) {
+                            ForEach(0 ..< tuneNotes.count){
+                                Text(self.tuneNotes[$0])
                             }
                             
                         }
-                        NavigationLink(destination: Tutorial()) {
-                            Text("Green")
-                            Label("", systemImage: "chevron")
+                        
+                        Picker(selection: $selectedTuneGreen, label: Text("Green")) {
+                            ForEach(0 ..< tuneNotes.count){
+                                Text(self.tuneNotes[$0])
+                            }
                         }
-                        NavigationLink(destination: Tutorial()) {
-                            Text("Blue")
-                            Label("", systemImage: "chevron")
+                        
+                        Picker(selection: $selectedTuneBlue, label: Text("Blue")) {
+                            ForEach(0 ..< tuneNotes.count){
+                                Text(self.tuneNotes[$0])
+                            }
                         }
                     }
-                    
                 }
-
             }
             .navigationTitle("Tune")
+            
         }
     }
 }

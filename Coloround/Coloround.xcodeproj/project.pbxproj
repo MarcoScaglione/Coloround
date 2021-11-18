@@ -15,7 +15,6 @@
 		9507D1CE2743D0CE002DE679 /* ColoroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1CD2743D0CE002DE679 /* ColoroundUITestsLaunchTests.swift */; };
 		95AC38052744FDC70057A3EA /* ModalSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC38032744FDB70057A3EA /* ModalSetting.swift */; };
 		95AC3807274653890057A3EA /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC3806274653890057A3EA /* CreditsView.swift */; };
-		95AC3809274662840057A3EA /* TuneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC3808274662840057A3EA /* TuneView.swift */; };
 		CFFD4E2927451116004B2849 /* tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFD4E2827451116004B2849 /* tutorial.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +47,6 @@
 		9507D1CD2743D0CE002DE679 /* ColoroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		95AC38032744FDB70057A3EA /* ModalSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSetting.swift; sourceTree = "<group>"; };
 		95AC3806274653890057A3EA /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
-		95AC3808274662840057A3EA /* TuneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneView.swift; sourceTree = "<group>"; };
 		CFFD4E2827451116004B2849 /* tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +100,6 @@
 				9507D1B02743D0CD002DE679 /* ColoroundApp.swift */,
 				CFFD4E2827451116004B2849 /* tutorial.swift */,
 				95AC38032744FDB70057A3EA /* ModalSetting.swift */,
-				95AC3808274662840057A3EA /* TuneView.swift */,
 				95AC3806274653890057A3EA /* CreditsView.swift */,
 				9507D1B42743D0CD002DE679 /* Assets.xcassets */,
 				9507D1C02743D0CE002DE679 /* ColoroundTests */,
@@ -266,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95AC3809274662840057A3EA /* TuneView.swift in Sources */,
 				CFFD4E2927451116004B2849 /* tutorial.swift in Sources */,
 				95AC3807274653890057A3EA /* CreditsView.swift in Sources */,
 				9507D1B12743D0CD002DE679 /* ColoroundApp.swift in Sources */,
