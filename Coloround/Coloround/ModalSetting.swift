@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct settingsView : View{
-    @State var duration: Double = 0.5
+    @State var duration = 0.50
     @State var selectedTuneRed = 0
     @State var selectedTuneGreen = 1
     @State var selectedTuneBlue = 2
-    var sDuration : String = ""
+    
+    
     
    
     var tuneNotes = ["A","C#","E"]
@@ -35,10 +36,10 @@ struct settingsView : View{
                                     
                                     Text("Sound Duration")
                                     Spacer()
-                                    Text("\(duration )")
+                                    Text("\(duration)")
                                     
                                 }
-                                Slider(value: $duration)
+                                Slider(value: $duration, in: 0.5...2.5, step: 0.1)
                                     
                             }
                             
