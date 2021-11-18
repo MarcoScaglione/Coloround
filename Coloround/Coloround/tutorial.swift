@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct tutorial: View {
+struct Tutorial: View {
     init() {
         UIPageControl.appearance().currentPageIndicatorTintColor = .darkGray
     }
@@ -176,6 +176,6 @@ struct FourthScreen: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        tutorial()
+        Tutorial()
     }
 }

@@ -12,6 +12,7 @@ struct ModalSetting : View {
     @State var showActionSheet = false
     
     
+    
     var ActionSheet: SwiftUI.ActionSheet {
         SwiftUI.ActionSheet(
             title: Text("Action Sheet's title"),
@@ -28,24 +29,24 @@ struct ModalSetting : View {
     var body: some View {
         ZStack{
             Color.white.edgesIgnoringSafeArea(.all)
-        VStack{
-            Button("show Modal"){
-                self.showmodalview.toggle()
-            }
-            Button("show Action Sheet"){
-                self.showActionSheet.toggle()
-            }
-            Menu("Actions") {
-                Button("Rename2", action: {print ("hello")})
-                Button("Rename", action: {print ("hello")})
-                Menu("Copy") {
-                    Button("Copy", action: {print ("hello")})
-                    Button("Copy Formatted", action: {print ("hello")})
-                    Button("Copy Library Path", action: {print ("hello")})
+            VStack{
+                Button("show Modal"){
+                    self.showmodalview.toggle()
+                }
+                Button("show Action Sheet"){
+                    self.showActionSheet.toggle()
+                }
+                Menu("Actions") {
+                    Button("Rename2", action: {print ("hello")})
+                    Button("Rename", action: {print ("hello")})
+                    Menu("Copy") {
+                        Button("Copy", action: {print ("hello")})
+                        Button("Copy Formatted", action: {print ("hello")})
+                        Button("Copy Library Path", action: {print ("hello")})
+                    }
                 }
             }
-        }
-        .actionSheet(isPresented: $showActionSheet, content: {self.ActionSheet})
+            .actionSheet(isPresented: $showActionSheet, content: {self.ActionSheet})
             .sheet(isPresented: $showmodalview, content: { ModalView() })
         }
        
@@ -64,16 +65,35 @@ struct ModalSetting : View {
                     Form{
                         Section( header: Text("Audio")){
                         
-                            NavigationLink(destination: tutorial()) {
+                            NavigationLink(destination: Tutorial()) {
                                 Text("Tune")
                                 Label("", systemImage: "chevron")
                             }
-                            HStack{
-                                Text("Sound Duration")
-                                Spacer()
-                                Text("\(duration) ")
+                            VStack{
+                                
+                                HStack{
+                                    
+                                    Text("Sound Duration")
+                                    Spacer()
+                                    Text("\(duration) ")
+                                    
+                                }
+                                
+                                HStack{
+                                    
+                                    Slider(value: $duration )
+                                        
+
+                                }
                             }
                             
+                        }
+                        Section( header : Text("About")){
+                            
+                            NavigationLink(destination: CreditsView()) {
+                                Text("Credits")
+                                Label("", systemImage: "chevron")
+                            }
                         }
                     }
 
