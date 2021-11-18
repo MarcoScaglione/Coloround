@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78A98FC32745217D0056F85F /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A98FC22745217D0056F85F /* MainPage.swift */; };
 		9507D1B12743D0CD002DE679 /* ColoroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1B02743D0CD002DE679 /* ColoroundApp.swift */; };
 		9507D1B52743D0CD002DE679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9507D1B42743D0CD002DE679 /* Assets.xcassets */; };
 		9507D1B82743D0CE002DE679 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9507D1B72743D0CE002DE679 /* Preview Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		78A98FC22745217D0056F85F /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		9507D1AD2743D0CD002DE679 /* Coloround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coloround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9507D1B02743D0CD002DE679 /* ColoroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoroundApp.swift; sourceTree = "<group>"; };
 		9507D1B42743D0CD002DE679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				9507D1B02743D0CD002DE679 /* ColoroundApp.swift */,
 				CFFD4E2827451116004B2849 /* tutorial.swift */,
 				95AC38032744FDB70057A3EA /* ModalSetting.swift */,
+				78A98FC22745217D0056F85F /* MainPage.swift */,
 				9507D1B42743D0CD002DE679 /* Assets.xcassets */,
 				9507D1B62743D0CE002DE679 /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 				CFFD4E2927451116004B2849 /* tutorial.swift in Sources */,
 				9507D1B12743D0CD002DE679 /* ColoroundApp.swift in Sources */,
 				95AC38052744FDC70057A3EA /* ModalSetting.swift in Sources */,
+				78A98FC32745217D0056F85F /* MainPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
