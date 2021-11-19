@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct settingsView : View{
-    @State var duration = 0.50
-    @State var selectedTuneRed = 0
-    @State var selectedTuneGreen = 1
-    @State var selectedTuneBlue = 2
+
     
-    
+    //@EnvironmentObject var Settings : SettingsObject   questo qui serve se devi prendere la variabile ma non modificarla
+    @StateObject var Settings = SettingsObject()
+            
+
     
    
-    var tuneNotes = ["A","C#","E"]
-    
+    var tuneNotes = ["440 - 880 Hz (A)","554 - 1109 Hz (C#)","659- 1319 Hz (E)"]
         
     
     var body: some View {
@@ -36,29 +35,29 @@ struct settingsView : View{
                                     
                                     Text("Sound Duration")
                                     Spacer()
-                                    Text("\(duration)")
+                                    Text("\(Settings.duration)")
                                     
                                 }
-                                Slider(value: $duration, in: 0.5...2.5, step: 0.1)
+                                Slider(value: $Settings.duration, in: 0.5...2.5, step: 0.1)
                                     
                             }
                             
                         }
-                        Section( header: Text("Frequencies")){
-                            Picker(selection: $selectedTuneRed, label: Text("Red")) {
+                        Section( header: Text("Frequencies ")){
+                            Picker(selection: $Settings.selectedTuneRed, label: Text("Red")) {
                                 ForEach(0 ..< tuneNotes.count){
                                     Text(self.tuneNotes[$0])
                                 }
                                 
                             }
                             
-                            Picker(selection: $selectedTuneGreen, label: Text("Green")) {
+                            Picker(selection: $Settings.selectedTuneGreen, label: Text("Green")) {
                                 ForEach(0 ..< tuneNotes.count){
                                     Text(self.tuneNotes[$0])
                                 }
                             }
                             
-                            Picker(selection: $selectedTuneBlue, label: Text("Blue")) {
+                            Picker(selection: $Settings.selectedTuneBlue, label: Text("Blue")) {
                                 ForEach(0 ..< tuneNotes.count){
                                     Text(self.tuneNotes[$0])
                                 }
