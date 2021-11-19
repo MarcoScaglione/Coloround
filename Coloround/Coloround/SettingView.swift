@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct settingsView : View{
+struct SettingsView : View{
 
     
     //@EnvironmentObject var Settings : SettingsObject   questo qui serve se devi prendere la variabile ma non modificarla
@@ -81,7 +81,7 @@ struct settingsView : View{
     
     struct ContentView_PreviewSettings: PreviewProvider {
         static var previews: some View {
-            settingsView()
+            SettingsView()
                 .previewDevice("iPhone 11")
         }
     }

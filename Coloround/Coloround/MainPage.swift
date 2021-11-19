@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct mainPage : View {
+struct MainPage : View {
     
     var body: some View {
 
@@ -20,7 +20,7 @@ struct mainPage : View {
                     
                     Spacer(minLength: 30.0)
                     
-                        NavigationLink(destination: tutorial()) {
+                        NavigationLink(destination: Tutorial()) {
                             Image ("Placeholder Gallery")
 
                                 .resizable()
@@ -34,7 +34,7 @@ struct mainPage : View {
 
                             HStack{
         
-                            NavigationLink(destination: ModalSetting()) {
+                                NavigationLink (destination: CreditsView() ) {
                                 Image ("Placeholder Gallery")
                                     .resizable()
                                     .frame(width: 195, height: 300)
@@ -64,7 +64,7 @@ struct mainPage : View {
                         }
                         Spacer()
                         
-                        NavigationLink(destination: ModalSetting()) {
+                        NavigationLink(destination: CreditsView()) {
                             Image ("Placeholder Gallery")
 
                                 .resizable()
@@ -112,7 +112,7 @@ struct mainPage : View {
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            mainPage()
+            MainPage()
                 .previewDevice("iPhone 11")
         }
     }
