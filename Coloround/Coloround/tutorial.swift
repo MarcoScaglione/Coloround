@@ -176,6 +176,6 @@ struct FourthScreen: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        tutorial()
+        tutorial().previewDevice("iPhone 11")
     }
 }
