@@ -7,56 +7,21 @@
 
 import SwiftUI
 
-struct ModalSetting : View {
-    @State var showmodalview = false
-    @State var showActionSheet = false
+struct settingsView : View{
+
     
+    //@EnvironmentObject var Settings : SettingsObject   questo qui serve se devi prendere la variabile ma non modificarla
+    @StateObject var Settings = SettingsObject()
+            
+
     
-    var ActionSheet: SwiftUI.ActionSheet {
-        SwiftUI.ActionSheet(
-            title: Text("Action Sheet's title"),
-            message: Text("This is a message"),
-            buttons: [
-                .default(Text("this is a default button"), action:  {            print ("Default button tapped")
-                }),
-                .destructive(Text("this is a destructive button")),
-                .cancel()
-            ])
-    }
+   
+    var tuneNotes = ["440 - 880 Hz (A)","554 - 1109 Hz (C#)","659- 1319 Hz (E)"]
         
     
     var body: some View {
         ZStack{
             Color.white.edgesIgnoringSafeArea(.all)
-        VStack{
-            Button("show Modal"){
-                self.showmodalview.toggle()
-            }
-            Button("show Action Sheet"){
-                self.showActionSheet.toggle()
-            }
-            Menu("Actions") {
-                Button("Rename2", action: {print ("hello")})
-                Button("Rename", action: {print ("hello")})
-                Menu("Copy") {
-                    Button("Copy", action: {print ("hello")})
-                    Button("Copy Formatted", action: {print ("hello")})
-                    Button("Copy Library Path", action: {print ("hello")})
-                }
-            }
-        }
-        .actionSheet(isPresented: $showActionSheet, content: {self.ActionSheet})
-            .sheet(isPresented: $showmodalview, content: { ModalView() })
-        }
-       
-    }
-    
-    struct ModalView: View {
-        @State var duration: Double = 0
-        @State var showmodalview = false
-        @Environment(\.presentationMode) private var presentationMode
-        
-        var body: some View {
             NavigationView {
                 
                 VStack(){
@@ -64,45 +29,61 @@ struct ModalSetting : View {
                     Form{
                         Section( header: Text("Audio")){
                         
-                            NavigationLink(destination: tutorial()) {
-                                Text("Tune")
-                                Label("", systemImage: "chevron")
-                            }
-                            HStack{
-                                Text("Sound Duration")
-                                Spacer()
-                                Text("\(duration) ")
+                            VStack{
+                                
+                                HStack{
+                                    
+                                    Text("Sound Duration")
+                                    Spacer()
+                                    Text("\(Settings.duration)")
+                                    
+                                }
+                                Slider(value: $Settings.duration, in: 0.5...2.5, step: 0.1)
+                                    
                             }
                             
                         }
+                        Section( header: Text("Frequencies ")){
+                            Picker(selection: $Settings.selectedTuneRed, label: Text("Red")) {
+                                ForEach(0 ..< tuneNotes.count){
+                                    Text(self.tuneNotes[$0])
+                                }
+                                
+                            }
+                            
+                            Picker(selection: $Settings.selectedTuneGreen, label: Text("Green")) {
+                                ForEach(0 ..< tuneNotes.count){
+                                    Text(self.tuneNotes[$0])
+                                }
+                            }
+                            
+                            Picker(selection: $Settings.selectedTuneBlue, label: Text("Blue")) {
+                                ForEach(0 ..< tuneNotes.count){
+                                    Text(self.tuneNotes[$0])
+                                }
+                            }
+                        }
+                           
+                        Section( header : Text("About")){
+                            
+                            NavigationLink(destination: CreditsView()) {
+                                Text("Credits")
+                            }
+                        }
                     }
-
                 }
                 .navigationTitle("Settings")
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        
-                        Button(action: {
-                            self.presentationMode.wrappedValue.dismiss()
-                        
-                        })
-                        {
-                            Text("Close")
-                            
-                        }
-                    }
-                }
+                
             }
         }
     }
+}
     
-    
-
-    struct ContentView_Previews: PreviewProvider {
+    struct ContentView_PreviewSettings: PreviewProvider {
         static var previews: some View {
-            ModalSetting()
+            settingsView()
                 .previewDevice("iPhone 11")
         }
     }
-}
 
+    

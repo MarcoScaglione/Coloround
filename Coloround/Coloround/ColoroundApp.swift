@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct ColoroundApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            tutorial()
+            Tutorial()
         }
     }
 }
