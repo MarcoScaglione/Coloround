@@ -18,6 +18,7 @@
 		95AC3807274653890057A3EA /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC3806274653890057A3EA /* CreditsView.swift */; };
 		95AC380D274793A70057A3EA /* SettingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC380C274793A70057A3EA /* SettingObject.swift */; };
 		95AC38112747B9310057A3EA /* RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC38102747B9310057A3EA /* RGBColor.swift */; };
+		95AC38192748038A0057A3EA /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC38182748038A0057A3EA /* ImagePickerView.swift */; };
 		CFFD4E2927451116004B2849 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFD4E2827451116004B2849 /* Tutorial.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		95AC3806274653890057A3EA /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		95AC380C274793A70057A3EA /* SettingObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingObject.swift; sourceTree = "<group>"; };
 		95AC38102747B9310057A3EA /* RGBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBColor.swift; sourceTree = "<group>"; };
+		95AC38182748038A0057A3EA /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		CFFD4E2827451116004B2849 /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				95AC380C274793A70057A3EA /* SettingObject.swift */,
 				95AC38102747B9310057A3EA /* RGBColor.swift */,
 				789116CF2747C373004FE844 /* MainPage.swift */,
+				95AC38182748038A0057A3EA /* ImagePickerView.swift */,
 				9507D1B42743D0CD002DE679 /* Assets.xcassets */,
 				9507D1C02743D0CE002DE679 /* ColoroundTests */,
 				9507D1B62743D0CE002DE679 /* Preview Content */,
@@ -276,6 +279,7 @@
 				95AC3807274653890057A3EA /* CreditsView.swift in Sources */,
 				9507D1B12743D0CD002DE679 /* ColoroundApp.swift in Sources */,
 				95AC38112747B9310057A3EA /* RGBColor.swift in Sources */,
+				95AC38192748038A0057A3EA /* ImagePickerView.swift in Sources */,
 				95AC38052744FDC70057A3EA /* SettingView.swift in Sources */,
 				789116D02747C373004FE844 /* MainPage.swift in Sources */,
 				95AC380D274793A70057A3EA /* SettingObject.swift in Sources */,
