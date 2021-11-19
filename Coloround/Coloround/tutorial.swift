@@ -17,7 +17,6 @@ struct Tutorial: View {
             FirstScreen()
             SecondScreen()
             ThirdScreen()
-            FourthScreen()
         }
         .tabViewStyle(PageTabViewStyle())
         .indexViewStyle(.page(backgroundDisplayMode: .always))
@@ -58,7 +57,7 @@ struct FirstScreen: View {
                 } // vstack
             
                 .padding([.top, .trailing], 50.0)
-                Spacer()
+            Spacer()
       
         } //view
     } //firstscreen
@@ -74,91 +73,87 @@ struct SecondScreen: View {
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.top, -100)
+                .font(.system(size: 28))
            
-            Text ("You can:")
-                .padding(.top)
-                .scaleEffect(2)
-                .foregroundColor(.secondary)
             
             HStack{
                 Image (systemName: "photo.on.rectangle")
-                    .scaleEffect(3)
-                
+                    .font(.system(size: 40))
+                    .foregroundColor(.blue)
                     .padding(.leading, 50.0)
+            VStack{
+                    Text("Albums")
+                        .fontWeight(.semibold)
+                        .font(.system(size: 18))
+                        .padding(.leading, -125.0)
+                
                 Text ("Choose your pic from your own album")
                     .font(.subheadline)
-                    .fontWeight(.semibold)
+                    .fontWeight(.regular)
                     .multilineTextAlignment(.leading)
-                    .padding(.leading, 30.0)
-                 .scaleEffect(1.0)
+                    .padding(.leading, 13.0)
+                    .font(.system(size: 18))
+                 
+                }
             
                 Spacer()
             }
             .padding(.top, 40.0)
             HStack{
                 Image(systemName: "camera.viewfinder")
-                    .padding(.leading, 26)
-                    .scaleEffect(3)
-                
+                    .padding(.leading, 55)
+                    .foregroundColor(.blue)
+                    .font(.system(size: 40))
+                VStack{
+                Text("Camera")
+                        .fontWeight(.semibold)
+                        .font(.system(size: 18))
+                        .padding(.leading, -20.0)
                 Text("Take a photo")
-                    .fontWeight(.semibold)
-                    .padding(.leading, 60.0)
-                    .scaleEffect(1.0)
+                    .fontWeight(.regular)
+                    .font(.system(size: 18))
+                    .padding(.leading, 18.0)
                     
+                    
+                }
                 Spacer()
+                
             }
-            .padding(.top, 40.0)
+            HStack{
+                Image(systemName: "eyedropper")
+                    .padding(.leading, 42.0)
+                    .foregroundColor(.blue)
+                    .font(.system(size: 40))
+                    
+                VStack {
+                    HStack{
+                    Text("Picker")
+                            .fontWeight(.semibold)
+                            .font(.system(size: 18))
+                            .padding(.leading, 19.0)
+                        Spacer()
+                    }
+                            
+                
+                            
+                    Text("Move the picker to discover the colors")
+                        .fontWeight(.regular)
+                        .font(.system(size: 18))
+                        .padding(.trailing, 18.0)
+                       
+                        
+                       
+                }
+            }.padding()
+          
         
         }
     }
 }
+
+
+
 struct ThirdScreen: View {
-    var body: some View {
-        VStack{
-            Text("Move the pointer to discover!")
-                .foregroundColor(.black)
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(.leading, 30.0)
-            Image("Flower")
-            HStack{
-                
-                Image("Rosso")
-                    .padding(.leading, -14.0)
-                    .scaleEffect(2)
-                VStack{
-                    
-                    HStack{
-                Text("R")
-                    .foregroundColor(.red)
-                    .padding(3.0)
-                Text ("254")
-                    }
-                    HStack{
-                Text("G")
-                            .padding(.trailing, 9.0)
-                    .foregroundColor(.green)
-                Text ("51")
-                    }
-                    HStack{
-                Text("B")
-                            .padding(.top)
-                    .foregroundColor(.blue)
-                Text("86")
-                    }
-                }
-            }
-            
-            VStack{
-                Text("Once you set the pointer you'll find the details just before")
-                    .fontWeight(.bold)
-            }
-        }
-    }
-}
-
-
-struct FourthScreen: View {
     var body: some View {
         VStack{
             Text("Listen to colors")
@@ -177,6 +172,8 @@ struct FourthScreen: View {
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                 Text("Start")
                     .padding(.top, 50.0)
+                .buttonStyle(.bordered)
+
         }
     }
 }
