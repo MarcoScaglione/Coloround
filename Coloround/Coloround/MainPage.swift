@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct MainPage : View {
+    @StateObject var Settings = SettingsObject()
     
     var body: some View {
 
@@ -88,8 +89,11 @@ struct MainPage : View {
                             
                         })
                         {
-                            Label("", systemImage: "gearshape")
-                            
+                            NavigationLink(destination: SettingsView()) {
+                                Label("", systemImage: "gearshape")
+                                
+                                    
+                            }
                         }
                     }
                     ToolbarItem(placement: .navigationBarTrailing){
@@ -104,7 +108,7 @@ struct MainPage : View {
                     }
                 }
                
-            }
+            }.environmentObject(Settings)
 
         }
         
