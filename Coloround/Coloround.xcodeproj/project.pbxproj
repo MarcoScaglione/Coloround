@@ -111,12 +111,6 @@
 			children = (
 				95AC3828274A72790057A3EA /* Logic */,
 				95AC3826274A725C0057A3EA /* Views */,
-				CFFD4E2827451116004B2849 /* Tutorial.swift */,
-				95AC38032744FDB70057A3EA /* SettingsView.swift */,
-				95AC3806274653890057A3EA /* CreditsView.swift */,
-				789116CF2747C373004FE844 /* MainPage.swift */,
-				95AC381E274996EC0057A3EA /* PhotoPickerView.swift */,
-				95AC38222749982D0057A3EA /* PhotoContentView.swift */,
 				9507D1B42743D0CD002DE679 /* Assets.xcassets */,
 				9507D1C02743D0CE002DE679 /* ColoroundTests */,
 				9507D1B62743D0CE002DE679 /* Preview Content */,
@@ -152,6 +146,12 @@
 		95AC3826274A725C0057A3EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				789116CF2747C373004FE844 /* MainPage.swift */,
+				95AC3806274653890057A3EA /* CreditsView.swift */,
+				95AC381E274996EC0057A3EA /* PhotoPickerView.swift */,
+				95AC38032744FDB70057A3EA /* SettingsView.swift */,
+				95AC38222749982D0057A3EA /* PhotoContentView.swift */,
+				CFFD4E2827451116004B2849 /* Tutorial.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
