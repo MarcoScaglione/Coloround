@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct MainPage : View {
     @StateObject var Settings = SettingsObject()
     
@@ -99,9 +98,9 @@ struct MainPage : View {
                     ToolbarItem(placement: .navigationBarTrailing){
                         Button(action: {
                             
-                            
                         })
                         {
+                           
                             Label("", systemImage: "camera.viewfinder")
                             
                         }
