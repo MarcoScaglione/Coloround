@@ -19,7 +19,7 @@ struct AlbumView: View {
                 
                    /* NavigationLink(destination: */PhotoPickerView(selectedImage: self.$selectedImage, sourceType: self.sourceType)
                     
-                        Label("", systemImage: "gearshape")
+                       
                     
             }
             
