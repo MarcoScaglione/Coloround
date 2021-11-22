@@ -148,7 +148,6 @@
 			children = (
 				789116CF2747C373004FE844 /* MainPage.swift */,
 				95AC3806274653890057A3EA /* CreditsView.swift */,
-				95AC381E274996EC0057A3EA /* PhotoPickerView.swift */,
 				95AC38032744FDB70057A3EA /* SettingsView.swift */,
 				95AC38222749982D0057A3EA /* PhotoContentView.swift */,
 				CFFD4E2827451116004B2849 /* Tutorial.swift */,
@@ -161,6 +160,7 @@
 			children = (
 				9507D1B02743D0CD002DE679 /* ColoroundApp.swift */,
 				95AC3820274997290057A3EA /* Coordinator.swift */,
+				95AC381E274996EC0057A3EA /* PhotoPickerView.swift */,
 				95AC38102747B9310057A3EA /* RGBColor.swift */,
 				95AC380C274793A70057A3EA /* SettingsObject.swift */,
 			);
