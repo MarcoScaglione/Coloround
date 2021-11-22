@@ -110,7 +110,7 @@ struct ColorPickerView_Previews: PreviewProvider {
         Group {
             ColorPickerView()
             ColorPickerView()
-                .previewDevice("iPhone 13")
+                .previewDevice("iPhone 11")
         }
     }
 }
