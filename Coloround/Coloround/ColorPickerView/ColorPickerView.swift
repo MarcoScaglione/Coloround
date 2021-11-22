@@ -13,7 +13,8 @@ struct ColorPickerView: View {
     
     @State private var color = Color.white
     @State private var pickerPoint: CGPoint? = nil
-    
+    let myUnit = ToneOutputUnit()
+
     var body: some View {
         VStack {
             ZStack {
@@ -89,7 +90,13 @@ struct ColorPickerView: View {
                 Spacer()
                 
                 Button("▶️ Play") {
+                    myUnit.setFrequency(freq: 400)
+                        myUnit.setToneVolume(vol: 100)
+                        myUnit.enableSpeaker()
+                        myUnit.setToneTime(t: 20000)
+
                     // Play sound
+                    
                 }
                 
                 Spacer()

@@ -25,7 +25,6 @@
 		95F59070274B9BD800EC289B /* TappableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F5906F274B9BD800EC289B /* TappableImageView.swift */; };
 		95F59072274B9BDE00EC289B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F59071274B9BDE00EC289B /* Color+Extension.swift */; };
 		95F59074274BA1A900EC289B /* Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F59073274BA1A900EC289B /* Synth.swift */; };
-		95F59076274BA1B000EC289B /* Synth View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F59075274BA1B000EC289B /* Synth View.swift */; };
 		CFFD4E2927451116004B2849 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFD4E2827451116004B2849 /* Tutorial.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +67,6 @@
 		95F5906F274B9BD800EC289B /* TappableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TappableImageView.swift; path = Coloround/ColorPickerView/TappableImageView.swift; sourceTree = SOURCE_ROOT; };
 		95F59071274B9BDE00EC289B /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Color+Extension.swift"; path = "Coloround/ColorPickerView/Color+Extension.swift"; sourceTree = SOURCE_ROOT; };
 		95F59073274BA1A900EC289B /* Synth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Synth.swift; sourceTree = "<group>"; };
-		95F59075274BA1B000EC289B /* Synth View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Synth View.swift"; path = "Coloround/Logic/Synth View.swift"; sourceTree = SOURCE_ROOT; };
 		CFFD4E2827451116004B2849 /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,7 +160,6 @@
 				95AC38222749982D0057A3EA /* PhotoContentView.swift */,
 				CFFD4E2827451116004B2849 /* Tutorial.swift */,
 				95F5906D274B9BCA00EC289B /* ColorPickerView.swift */,
-				95F59075274BA1B000EC289B /* Synth View.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -323,7 +320,6 @@
 				95AC38112747B9310057A3EA /* RGBColor.swift in Sources */,
 				95AC381F274996EC0057A3EA /* PhotoPickerView.swift in Sources */,
 				95F5906E274B9BCA00EC289B /* ColorPickerView.swift in Sources */,
-				95F59076274BA1B000EC289B /* Synth View.swift in Sources */,
 				95AC38052744FDC70057A3EA /* SettingsView.swift in Sources */,
 				789116D02747C373004FE844 /* MainPage.swift in Sources */,
 				95AC380D274793A70057A3EA /* SettingsObject.swift in Sources */,

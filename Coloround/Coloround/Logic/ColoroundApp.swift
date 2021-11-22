@@ -12,7 +12,7 @@ struct ColoroundApp: App {
     
     var body: some Scene {
         WindowGroup {
-            PhotoContentView()
+            ColorPickerView()
         }
     }
 }
