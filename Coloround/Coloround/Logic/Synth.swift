@@ -207,7 +207,7 @@ final class ToneOutputUnit: NSObject {
 
 
 
-        do {        // not running, so start hardware
+        do {        // not running, so start hardware kAudioUnitSubType_SystemOutput
             
             let audioComponentDescription = AudioComponentDescription(componentType: kAudioUnitType_Output, componentSubType: kAudioUnitSubType_GenericOutput, componentManufacturer: kAudioUnitManufacturer_Apple, componentFlags: 0, componentFlagsMask: 0)
 
@@ -308,5 +308,6 @@ final class ToneOutputUnit: NSObject {
         }
     }
 }
+
 
 //>>>>>>> Stashed changes
