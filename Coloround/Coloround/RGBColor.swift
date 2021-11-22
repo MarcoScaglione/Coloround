@@ -49,6 +49,15 @@ class RGBColor {
             self.blueF = blueV * 1.71875 + 440
         }
     }
+    
+    // RS
+    class func hzFrom(r: CGFloat, g: CGFloat, b: CGFloat) -> (String, String, String) {
+        (
+            red: Int((r * 1.71875 + 440)).description,
+            green: Int((g * 2.16797 + 554)).description,
+            blue: Int((b * 2.57813 + 659)).description
+        )
+    }
 }
 
 
