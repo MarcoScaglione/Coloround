@@ -46,9 +46,8 @@ struct FirstScreen: View {
                 .padding(.all, 16.0)
                 .font(.system(size: 22))
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    
                     Text("Skip the tutorial")
-            
-           
                         .multilineTextAlignment(.center)
                         .padding([.top, .leading, .bottom], 33.0)
 //                    NavigationLink(destination:
