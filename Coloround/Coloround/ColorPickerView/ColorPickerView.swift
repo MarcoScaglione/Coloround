@@ -2,7 +2,7 @@
 //  ColorPickerView.swift
 //  Coloround
 //
-//  Created by Roman Simenok on 21.11.2021.
+//  Created by Daniel Makhovskyi on 21.11.2021.
 //
 
 import SwiftUI
@@ -10,10 +10,13 @@ import SwiftUI
 // RS
 struct ColorPickerView: View {
     let imageName: String = "monaLisa" // input parateter, remove value and delete file from the project
-    
+   
     @State private var color = Color.white
     @State private var pickerPoint: CGPoint? = nil
+    @State private var Selected = 1// Ask why on iphone crashes if added
     let myUnit = ToneOutputUnit()
+    
+    
     
     func PlayFrequency(){
         let rgbHz: (
@@ -25,12 +28,26 @@ struct ColorPickerView: View {
             g: color.components.green,
             b: color.components.blue
         )
-        myUnit.setFrequency(freq: Double(rgbHz.red)!)
-        myUnit.setToneVolume(vol: 0.5)
-        myUnit.enableSpeaker()
-        myUnit.setToneTime(t: 20000)
-        print("tapped .\(myUnit.f0)")
-
+        switch Selected {
+        case 1 :
+            myUnit.setFrequency(freq: Double(rgbHz.red)!)
+            myUnit.setToneVolume(vol: 0.5)
+            myUnit.enableSpeaker()
+            myUnit.setToneTime(t: 2)
+        case 2:
+            myUnit.setFrequency(freq: Double(rgbHz.green)!)
+            myUnit.setToneVolume(vol: 0.5)
+            myUnit.enableSpeaker()
+            myUnit.setToneTime(t: 2)
+            
+        case 3:
+            myUnit.setFrequency(freq: Double(rgbHz.blue)!)
+            myUnit.setToneVolume(vol: 0.5)
+            myUnit.enableSpeaker()
+            myUnit.setToneTime(t: 2)
+            
+        default: break
+        }
     }
 
     var body: some View {
@@ -108,6 +125,7 @@ struct ColorPickerView: View {
                 Spacer()
                 
                 Button(action: PlayFrequency) {
+                    
                     VStack(spacing : 3){
                         
                         Image(systemName: "play.fill")

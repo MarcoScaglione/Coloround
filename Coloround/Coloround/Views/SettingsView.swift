@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Coloround mio
+//  Coloround 
 //
 //  Created by Marco Scaglione on 16/11/21.
 //

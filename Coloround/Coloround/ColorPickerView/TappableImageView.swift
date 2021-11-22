@@ -2,7 +2,7 @@
 //  TappableImageView.swift
 //  Coloround
 //
-//  Created by Roman Simenok on 22.11.2021.
+//  Created by Daniel Makhovskyi on 22.11.2021.
 //
 
 import SwiftUI
