@@ -2,7 +2,7 @@
 //  ColorPickerView.swift
 //  Coloround
 //
-//  Created by Daniel Makhovskyi on 20.11.2021.
+//  Created by Roman Simenok on 21.11.2021.
 //
 
 import SwiftUI
