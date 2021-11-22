@@ -14,6 +14,14 @@ struct ColorPickerView: View {
     @State private var color = Color.white
     @State private var pickerPoint: CGPoint? = nil
     let myUnit = ToneOutputUnit()
+    
+    func PlayFrequency(){
+        myUnit.setFrequency(freq: 400)
+        myUnit.setToneVolume(vol: 1.0)
+        myUnit.enableSpeaker()
+        myUnit.setToneTime(t: 20000)
+
+    }
 
     var body: some View {
         VStack {
@@ -89,13 +97,14 @@ struct ColorPickerView: View {
                 
                 Spacer()
                 
-                Button("▶️ Play") {
-                    myUnit.setFrequency(freq: 880)
-                        myUnit.enableSpeaker()
-                        myUnit.setToneTime(t: 20000)
-
-                    // Play sound
-                    
+                Button(action: PlayFrequency) {
+                    VStack(spacing : 3){
+                        
+                        Image(systemName: "play.fill")
+                        .dynamicTypeSize(.accessibility3)
+                        Text("Play")
+                    }
+                    .padding(.horizontal, 5.0)
                 }
                 
                 Spacer()
