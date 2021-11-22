@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		789116D02747C373004FE844 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789116CF2747C373004FE844 /* MainPage.swift */; };
+		78AAAC80274B88DA007C411E /* Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AAAC7F274B88DA007C411E /* Synth.swift */; };
+		78AAAC82274B960D007C411E /* Synth View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AAAC81274B960D007C411E /* Synth View.swift */; };
 		9507D1B12743D0CD002DE679 /* ColoroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9507D1B02743D0CD002DE679 /* ColoroundApp.swift */; };
 		9507D1B52743D0CD002DE679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9507D1B42743D0CD002DE679 /* Assets.xcassets */; };
 		9507D1B82743D0CE002DE679 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9507D1B72743D0CE002DE679 /* Preview Assets.xcassets */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		789116CF2747C373004FE844 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		78AAAC7F274B88DA007C411E /* Synth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synth.swift; sourceTree = "<group>"; };
+		78AAAC81274B960D007C411E /* Synth View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Synth View.swift"; sourceTree = "<group>"; };
 		9507D1AD2743D0CD002DE679 /* Coloround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coloround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9507D1B02743D0CD002DE679 /* ColoroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoroundApp.swift; sourceTree = "<group>"; };
 		9507D1B42743D0CD002DE679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 				95AC381E274996EC0057A3EA /* PhotoPickerView.swift */,
 				95AC38102747B9310057A3EA /* RGBColor.swift */,
 				95AC380C274793A70057A3EA /* SettingsObject.swift */,
+				78AAAC7F274B88DA007C411E /* Synth.swift */,
+				78AAAC81274B960D007C411E /* Synth View.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -301,7 +307,9 @@
 				95AC3807274653890057A3EA /* CreditsView.swift in Sources */,
 				95AC3821274997290057A3EA /* Coordinator.swift in Sources */,
 				9507D1B12743D0CD002DE679 /* ColoroundApp.swift in Sources */,
+				78AAAC82274B960D007C411E /* Synth View.swift in Sources */,
 				95AC38232749982D0057A3EA /* PhotoContentView.swift in Sources */,
+				78AAAC80274B88DA007C411E /* Synth.swift in Sources */,
 				95AC38112747B9310057A3EA /* RGBColor.swift in Sources */,
 				95AC381F274996EC0057A3EA /* PhotoPickerView.swift in Sources */,
 				95AC38052744FDC70057A3EA /* SettingsView.swift in Sources */,
