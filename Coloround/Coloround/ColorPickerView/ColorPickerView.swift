@@ -90,8 +90,7 @@ struct ColorPickerView: View {
                 Spacer()
                 
                 Button("▶️ Play") {
-                    myUnit.setFrequency(freq: 400)
-                    myUnit.setToneVolume(vol: 1.0)
+                    myUnit.setFrequency(freq: 880)
                         myUnit.enableSpeaker()
                         myUnit.setToneTime(t: 20000)
 
