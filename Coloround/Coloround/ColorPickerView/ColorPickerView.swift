@@ -91,7 +91,7 @@ struct ColorPickerView: View {
                 
                 Button("▶️ Play") {
                     myUnit.setFrequency(freq: 400)
-                        myUnit.setToneVolume(vol: 100)
+                    myUnit.setToneVolume(vol: 1.0)
                         myUnit.enableSpeaker()
                         myUnit.setToneTime(t: 20000)
 
@@ -115,7 +115,6 @@ struct ColorPickerView: View {
 struct ColorPickerView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ColorPickerView()
             ColorPickerView()
                 .previewDevice("iPhone 11")
         }

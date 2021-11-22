@@ -4,8 +4,8 @@
 //
 //  Created by Andrea Maddaloni on 22/11/21.
 //
-<<<<<<< Updated upstream
-//
+//<<<<<<< Updated upstream
+////
 //import Foundation
 //import AudioUnit
 //import AVFoundation
@@ -159,7 +159,7 @@
 //    }
 //}
 //
-=======
+//=======
 
 import Foundation
 import AudioUnit
@@ -309,4 +309,4 @@ final class ToneOutputUnit: NSObject {
     }
 }
 
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
