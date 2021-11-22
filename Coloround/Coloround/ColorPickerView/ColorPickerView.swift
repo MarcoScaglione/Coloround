@@ -16,10 +16,20 @@ struct ColorPickerView: View {
     let myUnit = ToneOutputUnit()
     
     func PlayFrequency(){
-        myUnit.setFrequency(freq: 400)
-        myUnit.setToneVolume(vol: 1.0)
+        let rgbHz: (
+            red: String,
+            green: String,
+            blue: String
+        ) = RGBColor.hzFrom(
+            r: color.components.red,
+            g: color.components.green,
+            b: color.components.blue
+        )
+        myUnit.setFrequency(freq: Double(rgbHz.red)!)
+        myUnit.setToneVolume(vol: 0.5)
         myUnit.enableSpeaker()
         myUnit.setToneTime(t: 20000)
+        print("tapped .\(myUnit.f0)")
 
     }
 

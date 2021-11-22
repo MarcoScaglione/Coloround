@@ -10,6 +10,7 @@ import Foundation
 import AudioUnit
 import AVFoundation
 
+
 final class ToneOutputUnit: NSObject {
 
     var auAudioUnit: AUAudioUnit! = nil     // placeholder for RemoteIO Audio Unit
@@ -53,8 +54,8 @@ final class ToneOutputUnit: NSObject {
 
 
         do {        // not running, so start hardware kAudioUnitSubType_SystemOutput
-            
-            let audioComponentDescription = AudioComponentDescription(componentType: kAudioUnitType_Output, componentSubType: kAudioUnitSubType_GenericOutput, componentManufacturer: kAudioUnitManufacturer_Apple, componentFlags: 0, componentFlagsMask: 0)
+            print("running")
+            let audioComponentDescription = AudioComponentDescription(componentType: kAudioUnitType_Output, componentSubType: kAudioUnitSubType_RemoteIO , componentManufacturer: kAudioUnitManufacturer_Apple, componentFlags: 0, componentFlagsMask: 0)
 
             if (auAudioUnit == nil) {
 
