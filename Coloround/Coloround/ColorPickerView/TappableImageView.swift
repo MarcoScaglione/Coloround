@@ -6,15 +6,15 @@
 //
 
 import SwiftUI
-import UIKit
+
+// RS
 
 struct TappableImageView: UIViewRepresentable {
-    let width: CGFloat
-    let height: CGFloat
-    let image: UIImage
+    var width: CGFloat
+    var name: String
     var tappedCallback: ((UIColor, CGPoint) -> Void)
 
-    class Coordinator: NSObject, UIGestureRecognizerDelegate {
+    class Coordinator: NSObject {
         var tappedCallback: ((UIColor, CGPoint) -> Void)
         
         init(tappedCallback: @escaping ((UIColor, CGPoint) -> Void)) {
@@ -22,42 +22,12 @@ struct TappableImageView: UIViewRepresentable {
         }
         
         @objc func tapped(gesture: UITapGestureRecognizer) {
-            guard let view = gesture.view as? UIImageView else {
-                return
+            let point = gesture.location(in: gesture.view)
+            
+            if let view = gesture.view,
+               let color = getPixelColorAtPoint(point: point, sourceView: view) {
+                self.tappedCallback(color, point)
             }
-            
-            let point = gesture.location(in: view)
-            let imageRect = imageRect(from: view)
-            
-            if imageRect.contains(point) {
-                if let color = getPixelColorAtPoint(point: point, sourceView: view) {
-                    self.tappedCallback(color, point)
-                }
-            }
-        }
-        
-        private func imageRect(from imageView: UIImageView) -> CGRect {
-            let imageViewSize = imageView.frame.size
-            let imgSize = imageView.image?.size
-            
-            guard let imageSize = imgSize else {
-                return CGRect.zero
-            }
-            
-            let scaleWidth = imageViewSize.width / imageSize.width
-            let scaleHeight = imageViewSize.height / imageSize.height
-            let aspect = fmin(scaleWidth, scaleHeight)
-            
-            var imageRect = CGRect(x: 0, y: 0, width: imageSize.width * aspect, height: imageSize.height * aspect)
-            // Center image
-            imageRect.origin.x = (imageViewSize.width - imageRect.size.width) / 2
-            imageRect.origin.y = (imageViewSize.height - imageRect.size.height) / 2
-            
-            // Add imageView offset
-            imageRect.origin.x += imageView.frame.origin.x
-            imageRect.origin.y += imageView.frame.origin.y
-            
-            return imageRect
         }
         
         private func getPixelColorAtPoint(point:CGPoint, sourceView: UIView) -> UIColor? {
@@ -88,9 +58,8 @@ struct TappableImageView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> UIImageView {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
         imageView.isUserInteractionEnabled = true
-        imageView.image = image.resizedImage(width: width, height: height)
+        imageView.image = UIImage(named: name)?.resizedImage(newWidth: UIScreen.main.bounds.width)
         let gesture = UITapGestureRecognizer(target: context.coordinator,
                                              action: #selector(Coordinator.tapped))
         imageView.addGestureRecognizer(gesture)
@@ -98,27 +67,13 @@ struct TappableImageView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIImageView, context: Context) {
-        uiView.image = image.resizedImage(width: width, height: height)
     }
 }
 
 private extension UIImage {
-    
-    // resize to fit input size and keep aspect
-    func resizedImage(width: CGFloat, height: CGFloat) -> UIImage? {
-        let newWidth: CGFloat
-        let newHeight: CGFloat
-        
-        if size.width > size.height {
-            let scale = width / size.width
-            newHeight = size.height * scale
-            newWidth = width
-        } else {
-            let scale = height / size.height
-            newWidth = size.width * scale
-            newHeight = height
-        }
-
+    func resizedImage(newWidth: CGFloat) -> UIImage? {
+        let scale = newWidth / size.width
+        let newHeight = size.height * scale
         UIGraphicsBeginImageContext(.init(width: newWidth, height: newHeight))
         self.draw(in: .init(x: 0, y: 0, width: newWidth, height: newHeight))
         let newImage = UIGraphicsGetImageFromCurrentImageContext()

@@ -50,6 +50,7 @@ class RGBColor {
         }
     }
     
+    // RS
     class func hzFrom(r: CGFloat, g: CGFloat, b: CGFloat) -> (String, String, String) {
         (
             red: Int((r * 1.71875 + 440)).description,
