@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingsView : View{
 
     
-    @EnvironmentObject var Settings : SettingsObject   //questo qui serve se devi prendere la variabile ma non modificarla
+    @EnvironmentObject var Settings : SettingsObject  
     //    @StateObject var Settings = SettingsObject()
     
     
