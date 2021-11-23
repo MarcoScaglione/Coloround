@@ -11,6 +11,8 @@ import SwiftUI
 struct ColorPickerView: View {
     let imageName: String = "monaLisa" // input parateter, remove value and delete file from the project
    
+    @StateObject var Settings = SettingsObject()
+
     @State private var color = Color.white
     @State private var pickerPoint: CGPoint? = nil
     @State private var Selected = 1// Ask why on iphone crashes if added
@@ -23,7 +25,7 @@ struct ColorPickerView: View {
             red: String,
             green: String,
             blue: String
-        ) = RGBColor.hzFrom(
+        ) = RGBColorFreq.hzFrom(S : Settings,
             r: color.components.red,
             g: color.components.green,
             b: color.components.blue
@@ -33,18 +35,18 @@ struct ColorPickerView: View {
             myUnit.setFrequency(freq: Double(rgbHz.red)!)
             myUnit.setToneVolume(vol: 0.5)
             myUnit.enableSpeaker()
-            myUnit.setToneTime(t: 2)
+            myUnit.setToneTime(t: Settings.duration)
         case 2:
             myUnit.setFrequency(freq: Double(rgbHz.green)!)
             myUnit.setToneVolume(vol: 0.5)
             myUnit.enableSpeaker()
-            myUnit.setToneTime(t: 2)
+            myUnit.setToneTime(t:  Settings.duration)
             
         case 3:
             myUnit.setFrequency(freq: Double(rgbHz.blue)!)
             myUnit.setToneVolume(vol: 0.5)
             myUnit.enableSpeaker()
-            myUnit.setToneTime(t: 2)
+            myUnit.setToneTime(t:  Settings.duration)
             
         default: break
         }
@@ -106,7 +108,7 @@ struct ColorPickerView: View {
                             red: String,
                             green: String,
                             blue: String
-                        ) = RGBColor.hzFrom(
+                        ) = RGBColorFreq.hzFrom( S : Settings,
                             r: color.components.red,
                             g: color.components.green,
                             b: color.components.blue
