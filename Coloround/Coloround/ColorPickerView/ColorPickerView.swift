@@ -20,10 +20,10 @@ struct ColorPickerView: View {
 >>>>>>> parent of 2e8a389 (Settings connected, freq showed bug solved, god bless your  RS friend)
 =======
     let imageName: String = "monaLisa" // input parateter, remove value and delete file from the project
-<<<<<<< HEAD
     
     @StateObject var Settings = SettingsObject()
     
+<<<<<<< HEAD
 =======
    
 >>>>>>> parent of f75b9b3 (colorpickerview page with camera changes)
@@ -37,6 +37,8 @@ struct ColorPickerView: View {
     @StateObject var Settings = SettingsObject()
     
 >>>>>>> parent of 7d897b0 (colorpickerview page changes with gallery)
+=======
+>>>>>>> parent of 039fbb2 (merge)
     @State private var color = Color.white
     @State private var pickerPoint: CGPoint? = nil
     @State private var Selected = 1// Ask why on iphone crashes if added
@@ -150,6 +152,7 @@ struct ColorPickerView: View {
                             blue: String
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         ) = RGBColor.hzFrom(
 =======
 <<<<<<< HEAD
@@ -161,6 +164,9 @@ struct ColorPickerView: View {
 =======
                         ) = RGBColorFreq.hzFrom(S: Settings,
 >>>>>>> parent of 7d897b0 (colorpickerview page changes with gallery)
+=======
+                        ) = RGBColorFreq.hzFrom(S: Settings,
+>>>>>>> parent of 039fbb2 (merge)
                             r: color.components.red,
                             g: color.components.green,
                             b: color.components.blue
