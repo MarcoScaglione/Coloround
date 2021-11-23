@@ -18,13 +18,12 @@ struct Tutorial: View {
             SecondScreen()
             ThirdScreen()
         }
-            .tabViewStyle(PageTabViewStyle())
+        .tabViewStyle(PageTabViewStyle())
         .indexViewStyle(.page(backgroundDisplayMode: .always))
     }
 }
 struct FirstScreen: View {
     var body: some View {
-        
         
         VStack(spacing: 10){
             Text("Welcome to")
@@ -46,31 +45,27 @@ struct FirstScreen: View {
                 .multilineTextAlignment(.center)
                 .padding(.all, 16.0)
                 .font(.system(size: 22))
-          
-            NavigationLink(destination: ColorPickerView(), label: {Text("Skip Tutorial")})
-            
-//            NavigationLink(destination:
-//            ColorPickerView()) {
-//                    Text("Skip the tutorial")
-//                        .multilineTextAlignment(.center)
-//                        .padding([.top, .leading, .bottom], 33.0)
- // vstack
-        
-                
-        
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    
+                    Text("Skip the tutorial")
+                        .multilineTextAlignment(.center)
+                        .padding([.top, .leading, .bottom], 33.0)
+//                    NavigationLink(destination:
+//                    album()) {
+//                    Text("tutorial")
+                } // vstack
             
                 .padding([.top, .trailing], 50.0)
             Spacer()
-        }
       
         } //view
     } //firstscreen
-
+}
 
 struct SecondScreen: View {
     var body: some View {
         
-        VStack(spacing: 60){
+        VStack(spacing: 50){
             
             Text ("Discover colors of your favourite pics!")
                 .foregroundColor(.black)
@@ -80,7 +75,7 @@ struct SecondScreen: View {
                 .font(.system(size: 28))
            
             
-            HStack {
+            HStack{
                 Image (systemName: "photo.on.rectangle")
                     .font(.system(size: 40))
                     .foregroundColor(.blue)
@@ -89,20 +84,19 @@ struct SecondScreen: View {
                     Text("Albums")
                         .fontWeight(.semibold)
                         .font(.system(size: 18))
-                        .padding(.leading, -84)
+                        .padding(.leading, -125.0)
                 
                 Text ("Choose your pic from your own album")
                     .font(.subheadline)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.leading)
-                    .padding(.leading, 18.5)
+                    .padding(.leading, 13.0)
                     .font(.system(size: 18))
                  
                 }
             
-                Spacer(minLength: 20)
+                Spacer()
             }
-            .offset(x: 30, y: -20)
             .padding(.top, 40.0)
             HStack{
                 Image(systemName: "camera.viewfinder")
@@ -118,11 +112,12 @@ struct SecondScreen: View {
                     .fontWeight(.regular)
                     .font(.system(size: 18))
                     .padding(.leading, 18.0)
-                        
+                    
+                    
                 }
+                Spacer()
                 
             }
-            .offset(x: -60, y:-40)
             HStack{
                 Image(systemName: "eyedropper")
                     .padding(.leading, 42.0)
@@ -135,7 +130,7 @@ struct SecondScreen: View {
                             .fontWeight(.semibold)
                             .font(.system(size: 18))
                             .padding(.leading, 19.0)
-                        Spacer(minLength: 20)
+                        Spacer()
                     }
                             
                 
@@ -143,14 +138,12 @@ struct SecondScreen: View {
                     Text("Move the picker to discover the colors")
                         .fontWeight(.regular)
                         .font(.system(size: 18))
-                        .padding(.trailing, 18)
- 
+                        .padding(.trailing, 18.0)
+                       
+                        
                        
                 }
-                
-            }
-            .offset(x: 30, y: -60)
-            .padding()
+            }.padding()
           
         
         }
@@ -162,43 +155,23 @@ struct SecondScreen: View {
 struct ThirdScreen: View {
     var body: some View {
         VStack{
-            HStack{
-            Image (systemName: "music.quarternote.3")
-                    .font(.system(size: 30))
-                    .offset(x: 0, y: -120)
             Text("Listen to colors")
-                .foregroundColor(.black)
                 .font(.title)
                 .fontWeight(.bold)
-                .font(.system(size: 18))
-                .offset(x: 0, y: -120)
-                Image (systemName: "music.quarternote.3")
-                        .font(.system(size: 30))
-                        .offset(x: 0, y: -120)
-
-                
-
-                    
-                    
-            }
-                
+                .multilineTextAlignment(.center)
+                .padding()
             
             
             Text("Choose one of the RGB axes or \"A\" (all of them) and click play to listen how your colors sound")
-                .fontWeight(.regular)
                 .multilineTextAlignment(.center)
-                .padding([.top, .leading, .trailing], 22.0)
-                .font(.system(size: 22))
-                .offset(x: 0, y: -30)
+                .padding(.top)
             Image("rgb")
                 .padding(.top, 10.0)
                 .scaleEffect()
-                .offset(x: 0, y: 30)
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                 Text("Start")
                     .padding(.top, 50.0)
                 .buttonStyle(.bordered)
-                .offset(x: 0, y: 120)
 
         }
     }
