@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Tutorial: View {
     init() {
-        UIPageControl.appearance().currentPageIndicatorTintColor = .darkGray
+        UIPageControl.appearance().currentPageIndicatorTintColor = .blue
     }
     
     var body: some View {
@@ -50,8 +50,10 @@ struct FirstScreen: View {
                 Button("Skip the tutorial") {
                   dismiss()
                 }
-            
+                .buttonStyle(.bordered)
+                .buttonBorderShape(.roundedRectangle)
                 .padding(80)
+            
             Spacer()
       
         } //view
@@ -72,17 +74,17 @@ struct SecondScreen: View {
            
             
             HStack{
-                Image (systemName: "photo.on.rectangle")
+                Image (systemName: "plus.app")
                     .font(.system(size: 40))
                     .foregroundColor(.blue)
                     .padding(.leading, 50.0)
             VStack{
-                    Text("Albums")
+                    Text("Albums or Camera")
                         .fontWeight(.semibold)
                         .font(.system(size: 18))
-                        .padding(.leading, -125.0)
+                        .padding(.leading, -110.0)
                 
-                Text ("Choose your pic from your own album")
+                Text ("Choose your pic from your own album or choose to take a photo")
                     .font(.subheadline)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.leading)
@@ -94,28 +96,9 @@ struct SecondScreen: View {
                 Spacer()
             }
             .padding(.top, 40.0)
+            
             HStack{
-                Image(systemName: "camera.viewfinder")
-                    .padding(.leading, 55)
-                    .foregroundColor(.blue)
-                    .font(.system(size: 40))
-                VStack{
-                Text("Camera")
-                        .fontWeight(.semibold)
-                        .font(.system(size: 18))
-                        .padding(.leading, -20.0)
-                Text("Take a photo")
-                    .fontWeight(.regular)
-                    .font(.system(size: 18))
-                    .padding(.leading, 18.0)
-                    
-                    
-                }
-                Spacer()
-                
-            }
-            HStack{
-                Image(systemName: "eyedropper")
+                Image(systemName: "drop")
                     .padding(.leading, 42.0)
                     .foregroundColor(.blue)
                     .font(.system(size: 40))
@@ -134,9 +117,7 @@ struct SecondScreen: View {
                     Text("Move the picker to discover the colors")
                         .fontWeight(.regular)
                         .font(.system(size: 18))
-                        .padding(.trailing, 18.0)
-                       
-                        
+                        .padding(.trailing, 32.0)
                        
                 }
             }.padding()
@@ -154,26 +135,36 @@ struct ThirdScreen: View {
     var body: some View {
         
         VStack{
+            HStack{
+                Image(systemName: "music.quarternote.3")
+                    .font(.system(size: 20))
             Text("Listen to colors")
                 .font(.title)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
-                .padding()
+                .padding(.top, 10)
+                Image(systemName: "music.quarternote.3")
+                    .font(.system(size: 20))
+            }
             
-            
-            Text("Choose one of the RGB axes or and click play to listen how your colors sound")
+            Text("Choose one of the RGB axes and click play to listen how your colors sound")
+                .fontWeight(.regular)
                 .multilineTextAlignment(.center)
-                .padding(.top)
+                .padding(.top, 80)
+                .font(.system(size: 20))
                 
-            Image("rgb")
+                
+            Image("rgbplay")
                 .padding(.top, 10.0)
                 .scaleEffect()
+                .font(.system(size: 70))
             Button("Start"){
                 dismiss()
             }
-                .padding(.top, 50.0)
+                
                 .buttonStyle(.bordered)
-                .offset(x: 0, y: 120)
+                .buttonBorderShape(.roundedRectangle)
+                .padding(.top, 150.0)
         }
     }
 }
