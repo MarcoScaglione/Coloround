@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct ColorPickerView: View {
+<<<<<<< HEAD
     @State private var image: UIImage?
+=======
+    let imageName: String = "monaLisa" // input parateter, remove value and delete file from the project
+   
+>>>>>>> parent of 2e8a389 (Settings connected, freq showed bug solved, god bless your  RS friend)
     @State private var color = Color.white
     @State private var pickerPoint: CGPoint?
     @State private var Selected = 1 // Ask why on iphone crashes if added
@@ -161,10 +166,36 @@ struct ColorPickerView: View {
                     Text(rgbHz.green)
                     Text(rgbHz.blue)
                 }
+<<<<<<< HEAD
                 VStack {
                     Text("Hz")
                     Text("Hz")
                     Text("Hz")
+=======
+                
+                Spacer()
+                
+                HStack {
+                    VStack {
+                        let rgbHz: (
+                            red: String,
+                            green: String,
+                            blue: String
+                        ) = RGBColor.hzFrom(
+                            r: color.components.red,
+                            g: color.components.green,
+                            b: color.components.blue
+                        )
+                        Text(rgbHz.red)
+                        Text(rgbHz.green)
+                        Text(rgbHz.blue)
+                    }
+                    VStack {
+                        Text("Hz")
+                        Text("Hz")
+                        Text("Hz")
+                    }
+>>>>>>> parent of 2e8a389 (Settings connected, freq showed bug solved, god bless your  RS friend)
                 }
             }
             
