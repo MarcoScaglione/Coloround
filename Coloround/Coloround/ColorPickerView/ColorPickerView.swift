@@ -35,6 +35,7 @@ struct ColorPickerView: View {
 >>>>>>> parent of 40a7285 (Merge branch 'main' of https://github.com/MarcoScaglione/Coloround)
 =======
     let imageName: String = "monaLisa" // input parateter, remove value and delete file from the project
+<<<<<<< HEAD
     
     @StateObject var Settings = SettingsObject()
     
@@ -48,6 +49,9 @@ struct ColorPickerView: View {
     let imageName: String = "monaLisa" // input parateter, remove value and delete file from the project
    
 >>>>>>> parent of f75b9b3 (colorpickerview page with camera changes)
+=======
+   
+>>>>>>> parent of 2e8a389 (Settings connected, freq showed bug solved, god bless your  RS friend)
     @State private var color = Color.white
     @State private var pickerPoint: CGPoint? = nil
     @State private var Selected = 1// Ask why on iphone crashes if added
@@ -170,6 +174,7 @@ struct ColorPickerView: View {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         ) = RGBColor.hzFrom(
 =======
 <<<<<<< HEAD
@@ -187,6 +192,9 @@ struct ColorPickerView: View {
 =======
                         ) = RGBColor.hzFrom(
 >>>>>>> parent of f75b9b3 (colorpickerview page with camera changes)
+=======
+                        ) = RGBColor.hzFrom(
+>>>>>>> parent of 2e8a389 (Settings connected, freq showed bug solved, god bless your  RS friend)
                             r: color.components.red,
                             g: color.components.green,
                             b: color.components.blue

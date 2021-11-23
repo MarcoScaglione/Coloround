@@ -55,6 +55,7 @@ class RGBColor {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // RS
 >>>>>>> parent of 2e8a389 (Settings connected, freq showed bug solved, god bless your  RS friend)
@@ -68,6 +69,9 @@ class RGBColor {
 =======
     // RS
 >>>>>>> parent of f75b9b3 (colorpickerview page with camera changes)
+=======
+    // RS
+>>>>>>> parent of 2e8a389 (Settings connected, freq showed bug solved, god bless your  RS friend)
     class func hzFrom(r: CGFloat, g: CGFloat, b: CGFloat) -> (String, String, String) {
         (
             red: Int((r * 1.71875 + 440)).description,
