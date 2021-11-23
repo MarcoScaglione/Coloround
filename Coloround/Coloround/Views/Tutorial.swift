@@ -51,7 +51,7 @@ struct FirstScreen: View {
                   dismiss()
                 }
             
-                .padding([.top, .trailing], 50.0)
+                .padding(80)
             Spacer()
       
         } //view
