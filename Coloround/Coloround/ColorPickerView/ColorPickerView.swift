@@ -115,6 +115,9 @@ struct ColorPickerView: View {
                 }
                 }
             }.environmentObject(Settings)
+            .sheet(isPresented: $showingSheet){
+                Tutorial()
+            }
         
         .navigationBarTitleDisplayMode(.inline)
         .actionSheet(isPresented: $showingActionSheet) {

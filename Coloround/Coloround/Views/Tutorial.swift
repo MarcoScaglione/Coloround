@@ -64,7 +64,7 @@ struct SecondScreen: View {
         VStack(spacing: 50){
             
             Text ("Discover colors of your favourite pics!")
-                .foregroundColor(.black)
+                
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.top, -100)
@@ -161,9 +161,10 @@ struct ThirdScreen: View {
                 .padding()
             
             
-            Text("Choose one of the RGB axes or \"A\" (all of them) and click play to listen how your colors sound")
+            Text("Choose one of the RGB axes or and click play to listen how your colors sound")
                 .multilineTextAlignment(.center)
                 .padding(.top)
+                
             Image("rgb")
                 .padding(.top, 10.0)
                 .scaleEffect()
