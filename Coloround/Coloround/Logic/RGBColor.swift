@@ -53,6 +53,7 @@ class RGBColor {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // RS
 >>>>>>> parent of 2e8a389 (Settings connected, freq showed bug solved, god bless your  RS friend)
@@ -61,6 +62,8 @@ class RGBColor {
 >>>>>>> parent of 82493dc (daniel changes)
 =======
 >>>>>>> parent of 40a7285 (Merge branch 'main' of https://github.com/MarcoScaglione/Coloround)
+=======
+>>>>>>> parent of 6a04abe (Merge branch 'main' of https://github.com/MarcoScaglione/Coloround)
     class func hzFrom(r: CGFloat, g: CGFloat, b: CGFloat) -> (String, String, String) {
         (
             red: Int((r * 1.71875 + 440)).description,
