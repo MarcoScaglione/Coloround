@@ -23,6 +23,8 @@ struct Tutorial: View {
     }
 }
 struct FirstScreen: View {
+    
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         
         VStack(spacing: 10){
@@ -45,15 +47,9 @@ struct FirstScreen: View {
                 .multilineTextAlignment(.center)
                 .padding(.all, 16.0)
                 .font(.system(size: 22))
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                    
-                    Text("Skip the tutorial")
-                        .multilineTextAlignment(.center)
-                        .padding([.top, .leading, .bottom], 33.0)
-//                    NavigationLink(destination:
-//                    album()) {
-//                    Text("tutorial")
-                } // vstack
+                Button("Skip the tutorial") {
+                  dismiss()
+                }
             
                 .padding([.top, .trailing], 50.0)
             Spacer()
@@ -153,7 +149,10 @@ struct SecondScreen: View {
 
 
 struct ThirdScreen: View {
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
+        
         VStack{
             Text("Listen to colors")
                 .font(.title)
@@ -168,11 +167,12 @@ struct ThirdScreen: View {
             Image("rgb")
                 .padding(.top, 10.0)
                 .scaleEffect()
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("Start")
-                    .padding(.top, 50.0)
+            Button("Start"){
+                dismiss()
+            }
+                .padding(.top, 50.0)
                 .buttonStyle(.bordered)
-
+                .offset(x: 0, y: 120)
         }
     }
 }
@@ -182,4 +182,4 @@ struct ContentView_Previews: PreviewProvider {
         Tutorial()
     }
 }
-}
+

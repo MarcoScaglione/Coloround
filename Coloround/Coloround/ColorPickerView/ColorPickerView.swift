@@ -14,6 +14,7 @@ struct ColorPickerView: View {
     @State private var Selected = 1
     @State private var showingActionSheet = false
     @State private var showingImagePicker = false
+    @State private var showingSheet = true
     @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
     
     @StateObject var Settings = SettingsObject()
@@ -53,6 +54,7 @@ struct ColorPickerView: View {
     }
 
     var body: some View {
+        
         NavigationView{
             
             VStack {
@@ -97,19 +99,22 @@ struct ColorPickerView: View {
             }
             .toolbar{
                 ToolbarItemGroup(placement: .navigationBarTrailing){
-                    Button(action: {
-                        showingActionSheet = true
-                    }, label: {
+                    NavigationLink(destination: SettingsView()) {
                         Image(systemName: "gearshape")
-                    })
+                            .dynamicTypeSize(.xLarge)
+                    }
+                    .padding(1)
+                    
                     Button(action: {
                         showingActionSheet = true
                     }, label: {
-                        Image(systemName: "plus")
+                        Image(systemName: "plus.app")
+                            .dynamicTypeSize(.xxLarge)
                     })
+                        .padding(1)
                 }
-            }
-        }
+                }
+            }.environmentObject(Settings)
         
         .navigationBarTitleDisplayMode(.inline)
         .actionSheet(isPresented: $showingActionSheet) {
@@ -144,16 +149,26 @@ struct ColorPickerView: View {
             HStack {
                 VStack {
                     Text("R")
+                        .dynamicTypeSize(.xLarge)
                         .foregroundColor(Color.red)
+                        .padding(0.1)
                     Text("G")
+                        .dynamicTypeSize(.xLarge)
                         .foregroundColor(Color.green)
+                        .padding(0.1)
                     Text("B")
+                        .dynamicTypeSize(.xLarge)
                         .foregroundColor(Color.blue)
                 }
                 VStack {
                     Text(Int(color.components.red).description)
+                        .dynamicTypeSize(.xLarge)
+                        .padding(0.1)
                     Text(Int(color.components.green).description)
+                        .dynamicTypeSize(.xLarge)
+                        .padding(0.1)
                     Text(Int(color.components.blue).description)
+                        .dynamicTypeSize(.xLarge)
                 }
             }
             
@@ -171,13 +186,23 @@ struct ColorPickerView: View {
                                             b: color.components.blue
                     )
                     Text(rgbHz.red)
+                        .dynamicTypeSize(.xLarge)
+                        .padding(0.1)
                     Text(rgbHz.green)
+                        .dynamicTypeSize(.xLarge)
+                        .padding(0.1)
                     Text(rgbHz.blue)
+                        .dynamicTypeSize(.xLarge)
                 }
                 VStack {
                     Text("Hz")
+                        .dynamicTypeSize(.xLarge)
+                        .padding(0.1)
                     Text("Hz")
+                        .dynamicTypeSize(.xLarge)
+                        .padding(0.1)
                     Text("Hz")
+                        .dynamicTypeSize(.xLarge)
                 }
             }
             
@@ -190,7 +215,7 @@ struct ColorPickerView: View {
                     Text("Play")
                 }
                 .padding(.horizontal, 5.0)
-            }
+            }.dynamicTypeSize(.xxLarge)
             
             Spacer()
         }
@@ -206,15 +231,15 @@ struct ColorPickerView: View {
                 Spacer()
                 Button("R", action: {
                   Selected = 1
-                }).foregroundColor(Selected == 1 ? .blue : .gray)
-                Spacer()
+                }).dynamicTypeSize(.xxLarge).foregroundColor(Selected == 1 ? .blue : .gray)
+                Spacer(minLength: 100)
                 Button("G", action: {
                   Selected = 2
-                }).foregroundColor(Selected == 2 ? .blue : .gray)
-                Spacer()
+                }).dynamicTypeSize(.xxLarge).foregroundColor(Selected == 2 ? .blue : .gray)
+                Spacer(minLength: 100)
                 Button("B", action: {
                   Selected = 3
-                }).foregroundColor(Selected == 3 ? .blue : .gray)
+                }).dynamicTypeSize(.xxLarge).foregroundColor(Selected == 3 ? .blue : .gray)
                 Spacer()
             }
         }
