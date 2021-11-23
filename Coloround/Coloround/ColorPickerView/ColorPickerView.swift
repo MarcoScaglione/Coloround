@@ -16,7 +16,6 @@ struct ColorPickerView: View {
     @State private var color = Color.white
     @State private var pickerPoint: CGPoint? = nil
     @State private var Selected = 1// Ask why on iphone crashes if added
-    @State private var showingSheet = true
     let myUnit = ToneOutputUnit()
     
     
@@ -54,13 +53,6 @@ struct ColorPickerView: View {
     }
 
     var body: some View {
-    Button ("Skip tutorial") {
-        showingSheet.toggle()
-    }
-    .sheet(isPresented: $showingSheet) {
-        Tutorial()
-    }
-        
         VStack {
             ZStack {
                 GeometryReader { geometry in
