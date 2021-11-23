@@ -8,6 +8,7 @@
 import SwiftUI
 import UIKit
 
+// RS
 extension Color {
     var components: (red: CGFloat, green: CGFloat, blue: CGFloat, opacity: CGFloat) {
         var r: CGFloat = 0
