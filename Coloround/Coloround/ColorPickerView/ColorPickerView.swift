@@ -10,16 +10,26 @@ import SwiftUI
 // RS
 struct ColorPickerView: View {
     let imageName: String = "monaLisa" // input parateter, remove value and delete file from the project
+<<<<<<< HEAD
     
     @StateObject var Settings = SettingsObject()
     
+=======
+   
+>>>>>>> parent of f75b9b3 (colorpickerview page with camera changes)
     @State private var color = Color.white
     @State private var pickerPoint: CGPoint? = nil
     @State private var Selected = 1// Ask why on iphone crashes if added
     let myUnit = ToneOutputUnit()
+<<<<<<< HEAD
     
     
     
+=======
+    
+    
+    
+>>>>>>> parent of f75b9b3 (colorpickerview page with camera changes)
     func PlayFrequency(){
         let rgbHz: (
             red: String,
@@ -108,7 +118,11 @@ struct ColorPickerView: View {
                             red: String,
                             green: String,
                             blue: String
+<<<<<<< HEAD
                         ) = RGBColorFreq.hzFrom(S: Settings,
+=======
+                        ) = RGBColor.hzFrom(
+>>>>>>> parent of f75b9b3 (colorpickerview page with camera changes)
                             r: color.components.red,
                             g: color.components.green,
                             b: color.components.blue
