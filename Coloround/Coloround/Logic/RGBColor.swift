@@ -51,9 +51,13 @@ class RGBColor {
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // RS
 >>>>>>> parent of 2e8a389 (Settings connected, freq showed bug solved, god bless your  RS friend)
+=======
+    // RS
+>>>>>>> parent of 82493dc (daniel changes)
     class func hzFrom(r: CGFloat, g: CGFloat, b: CGFloat) -> (String, String, String) {
         (
             red: Int((r * 1.71875 + 440)).description,

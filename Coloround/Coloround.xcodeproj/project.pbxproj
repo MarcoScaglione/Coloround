@@ -19,13 +19,13 @@
 		95AC380D274793A70057A3EA /* SettingsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC380C274793A70057A3EA /* SettingsObject.swift */; };
 		95AC38112747B9310057A3EA /* RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC38102747B9310057A3EA /* RGBColor.swift */; };
 		95AC381F274996EC0057A3EA /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC381E274996EC0057A3EA /* PhotoPickerView.swift */; };
+		95AC3821274997290057A3EA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC3820274997290057A3EA /* Coordinator.swift */; };
 		95AC38232749982D0057A3EA /* PhotoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC38222749982D0057A3EA /* PhotoContentView.swift */; };
 		95F5906E274B9BCA00EC289B /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F5906D274B9BCA00EC289B /* ColorPickerView.swift */; };
 		95F59070274B9BD800EC289B /* TappableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F5906F274B9BD800EC289B /* TappableImageView.swift */; };
 		95F59072274B9BDE00EC289B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F59071274B9BDE00EC289B /* Color+Extension.swift */; };
 		95F59074274BA1A900EC289B /* Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F59073274BA1A900EC289B /* Synth.swift */; };
 		CFFD4E2927451116004B2849 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFD4E2827451116004B2849 /* Tutorial.swift */; };
-		FCBCB565274CCE9000113B03 /* TestNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBCB564274CCE9000113B03 /* TestNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,13 +61,13 @@
 		95AC380C274793A70057A3EA /* SettingsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsObject.swift; sourceTree = "<group>"; };
 		95AC38102747B9310057A3EA /* RGBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBColor.swift; sourceTree = "<group>"; };
 		95AC381E274996EC0057A3EA /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
+		95AC3820274997290057A3EA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		95AC38222749982D0057A3EA /* PhotoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoContentView.swift; sourceTree = "<group>"; };
 		95F5906D274B9BCA00EC289B /* ColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPickerView.swift; path = Coloround/ColorPickerView/ColorPickerView.swift; sourceTree = SOURCE_ROOT; };
 		95F5906F274B9BD800EC289B /* TappableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TappableImageView.swift; path = Coloround/ColorPickerView/TappableImageView.swift; sourceTree = SOURCE_ROOT; };
 		95F59071274B9BDE00EC289B /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Color+Extension.swift"; path = "Coloround/ColorPickerView/Color+Extension.swift"; sourceTree = SOURCE_ROOT; };
 		95F59073274BA1A900EC289B /* Synth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Synth.swift; sourceTree = "<group>"; };
 		CFFD4E2827451116004B2849 /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
-		FCBCB564274CCE9000113B03 /* TestNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +160,6 @@
 				95AC38222749982D0057A3EA /* PhotoContentView.swift */,
 				CFFD4E2827451116004B2849 /* Tutorial.swift */,
 				95F5906D274B9BCA00EC289B /* ColorPickerView.swift */,
-				FCBCB564274CCE9000113B03 /* TestNavigationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				9507D1B02743D0CD002DE679 /* ColoroundApp.swift */,
+				95AC3820274997290057A3EA /* Coordinator.swift */,
 				95AC381E274996EC0057A3EA /* PhotoPickerView.swift */,
 				95AC38102747B9310057A3EA /* RGBColor.swift */,
 				95AC380C274793A70057A3EA /* SettingsObject.swift */,
@@ -314,6 +314,7 @@
 				95F59074274BA1A900EC289B /* Synth.swift in Sources */,
 				95AC3807274653890057A3EA /* CreditsView.swift in Sources */,
 				95F59070274B9BD800EC289B /* TappableImageView.swift in Sources */,
+				95AC3821274997290057A3EA /* Coordinator.swift in Sources */,
 				9507D1B12743D0CD002DE679 /* ColoroundApp.swift in Sources */,
 				95AC38232749982D0057A3EA /* PhotoContentView.swift in Sources */,
 				95AC38112747B9310057A3EA /* RGBColor.swift in Sources */,
@@ -322,7 +323,6 @@
 				95AC38052744FDC70057A3EA /* SettingsView.swift in Sources */,
 				789116D02747C373004FE844 /* MainPage.swift in Sources */,
 				95AC380D274793A70057A3EA /* SettingsObject.swift in Sources */,
-				FCBCB565274CCE9000113B03 /* TestNavigationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
