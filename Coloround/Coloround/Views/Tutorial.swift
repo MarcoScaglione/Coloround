@@ -37,7 +37,7 @@ struct FirstScreen: View {
                 .resizable()
                 .aspectRatio(1.7777777778, contentMode: .fill)
                 .frame(height: 207)
-            Text ("This app is made to help Colorblind people to easily recognize and memorize colors using sounds")
+            Text ("This app is made to help Colorblind people to easily recognize colors using sounds")
                 .fontWeight(.medium)
                 .multilineTextAlignment(.center)
                 .padding([.top, .leading, .trailing], 22.0)
@@ -138,7 +138,7 @@ struct ThirdScreen: View {
             HStack{
                 Image(systemName: "music.quarternote.3")
                     .font(.system(size: 20))
-            Text("Listen to colors")
+            Text("Listen to your colors")
                 .font(.title)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
@@ -152,6 +152,7 @@ struct ThirdScreen: View {
                 .multilineTextAlignment(.center)
                 .padding(.top, 80)
                 .font(.system(size: 20))
+                
                 
                 
             Image("rgbplay")
