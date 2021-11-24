@@ -486,8 +486,8 @@
 				DEVELOPMENT_TEAM = WGV3S73V42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "$(Coloround) Access camera to shot the photos which will be displayed and used  ";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(Coloround) Access library to pick the images which will be displayed and used  ";
+				INFOPLIST_KEY_NSCameraUsageDescription = " We need to access camera in order to take the photo which will be used in the previous view ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = " Access library in order to pick the image which will be used in the previous view";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -517,8 +517,8 @@
 				DEVELOPMENT_TEAM = WGV3S73V42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "$(Coloround) Access camera to shot the photos which will be displayed and used  ";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(Coloround) Access library to pick the images which will be displayed and used  ";
+				INFOPLIST_KEY_NSCameraUsageDescription = " We need to access camera in order to take the photo which will be used in the previous view ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = " Access library in order to pick the image which will be used in the previous view";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

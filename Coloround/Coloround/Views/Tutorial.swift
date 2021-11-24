@@ -27,17 +27,17 @@ struct FirstScreen: View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
         
-        VStack(spacing: 10){
-            Text("Welcome to")
+        VStack(alignment: .center, spacing: 10){
+            Text("Welcome to Coloround")
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.top, 120.0)
                 
-            Image("sfondop")
+            Image("Logo Final.001")
                 .resizable()
                 .aspectRatio(1.7777777778, contentMode: .fill)
                 .frame(height: 207)
-            Text ("This app is made to help Colorblind people to easily recognize and memorize colors using sounds")
+            Text ("This app is made to help Colorblind people to easily recognize and memorize colors using sounds.")
                 .fontWeight(.medium)
                 .multilineTextAlignment(.leading)
                 .padding([.top, .leading, .trailing], 22.0)
@@ -45,7 +45,8 @@ struct FirstScreen: View {
             Text ("Swipe to the left to discover what you can do with it!")
                 .fontWeight(.medium)
                 .multilineTextAlignment(.leading)
-                .padding(.all, 16.0)
+                .padding(.leading, 25.0)
+                .padding(.trailing,11.0)
                 .font(.system(size: 22))
                 Button("Skip the tutorial") {
                   dismiss()
@@ -135,7 +136,7 @@ struct ThirdScreen: View {
     
     var body: some View {
         
-        VStack{
+        VStack(alignment: .center, spacing: 20){
             HStack{
                 Image(systemName: "music.quarternote.3")
                     .font(.system(size: 20))
@@ -148,23 +149,25 @@ struct ThirdScreen: View {
                     .font(.system(size: 20))
             }
             
-            Text("Choose one of the RGB axes and click play to listen how your colors sound")
-                .fontWeight(.regular)
-                .multilineTextAlignment(.center)
-                .padding(.top)
-                .font(.system(size: 20))
+            VStack(spacing: 60){
+                Text("Choose one of the RGB axes and click play to listen how your colors sound")
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.leading)
+                    .padding([.top, .leading, .trailing], 30.0)
+                    .font(.system(size: 20))
                 
                 
-            Image("rgbplay")
-                .padding(.top, 10.0)
-                .scaleEffect()
-                .font(.system(size: 70))
+                Image("rgbplay")
+                //                .padding(.top, 20.0)
+                    .scaleEffect()
+                    .font(.system(size: 70))
+            }
             Button("Start"){
                 dismiss()
             }
-                
-                .buttonStyle(.bordered)
-                .buttonBorderShape(.roundedRectangle)
+            
+            .buttonStyle(.bordered)
+            .buttonBorderShape(.roundedRectangle)
                 .padding(.top, 150.0)
         }
     }
