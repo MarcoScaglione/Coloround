@@ -37,14 +37,14 @@ struct FirstScreen: View {
                 .resizable()
                 .aspectRatio(1.7777777778, contentMode: .fill)
                 .frame(height: 207)
-            Text ("This app is made to help Colorblind people to easily recognize colors using sounds")
+            Text ("This app is made to help Colorblind people to easily recognize and memorize colors using sounds")
                 .fontWeight(.medium)
-                .multilineTextAlignment(.center)
+                .multilineTextAlignment(.leading)
                 .padding([.top, .leading, .trailing], 22.0)
                 .font(.system(size: 22))
             Text ("Swipe to the left to discover what you can do with it!")
                 .fontWeight(.medium)
-                .multilineTextAlignment(.center)
+                .multilineTextAlignment(.leading)
                 .padding(.all, 16.0)
                 .font(.system(size: 22))
                 Button("Skip the tutorial") {
@@ -65,7 +65,7 @@ struct SecondScreen: View {
         
         VStack(spacing: 50){
             
-            Text ("Discover colors of your favourite pics!")
+            Text ("Discover the colors of your favourite pics!")
                 
                 .font(.title)
                 .fontWeight(.bold)
@@ -84,11 +84,11 @@ struct SecondScreen: View {
                         .font(.system(size: 18))
                         .padding(.leading, -110.0)
                 
-                Text ("Choose your pic from your own album or choose to take a photo")
+                Text ("Choose your pic from your own album or just take a photo")
                     .font(.subheadline)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.leading)
-                    .padding(.leading, 13.0)
+                    .padding([.leading, .bottom, .trailing], 13.0)
                     .font(.system(size: 18))
                  
                 }
@@ -118,6 +118,7 @@ struct SecondScreen: View {
                         .fontWeight(.regular)
                         .font(.system(size: 18))
                         .padding(.trailing, 32.0)
+                    
                        
                 }
             }.padding()
@@ -138,7 +139,7 @@ struct ThirdScreen: View {
             HStack{
                 Image(systemName: "music.quarternote.3")
                     .font(.system(size: 20))
-            Text("Listen to your colors")
+            Text("Listen to your colors!")
                 .font(.title)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
@@ -150,9 +151,8 @@ struct ThirdScreen: View {
             Text("Choose one of the RGB axes and click play to listen how your colors sound")
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
-                .padding(.top, 80)
+                .padding(.top)
                 .font(.system(size: 20))
-                
                 
                 
             Image("rgbplay")

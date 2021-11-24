@@ -234,15 +234,21 @@ struct ColorPickerView: View {
                 Spacer()
                 Button("R", action: {
                   Selected = 1
-                }).dynamicTypeSize(.xxLarge).foregroundColor(Selected == 1 ? .blue : .gray)
+                })
+                    .buttonStyle(.bordered)
+                    .buttonBorderShape(.roundedRectangle).dynamicTypeSize(.xxLarge).foregroundColor(Selected == 1 ? .blue : .gray)
                 Spacer(minLength: 100)
                 Button("G", action: {
                   Selected = 2
-                }).dynamicTypeSize(.xxLarge).foregroundColor(Selected == 2 ? .blue : .gray)
+                })
+                    .buttonStyle(.bordered)
+                    .buttonBorderShape(.roundedRectangle).dynamicTypeSize(.xxLarge).foregroundColor(Selected == 2 ? .blue : .gray)
                 Spacer(minLength: 100)
                 Button("B", action: {
                   Selected = 3
-                }).dynamicTypeSize(.xxLarge).foregroundColor(Selected == 3 ? .blue : .gray)
+                })
+                    .buttonStyle(.bordered)
+                    .buttonBorderShape(.roundedRectangle).dynamicTypeSize(.xxLarge).foregroundColor(Selected == 3 ? .blue : .gray)
                 Spacer()
             }
         }
