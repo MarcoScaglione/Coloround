@@ -25,7 +25,6 @@
 		95F59070274B9BD800EC289B /* TappableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F5906F274B9BD800EC289B /* TappableImageView.swift */; };
 		95F59072274B9BDE00EC289B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F59071274B9BDE00EC289B /* Color+Extension.swift */; };
 		95F59074274BA1A900EC289B /* Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F59073274BA1A900EC289B /* Synth.swift */; };
-		95F5907C274E46EC00EC289B /* APP ICONS in Resources */ = {isa = PBXBuildFile; fileRef = 95F5907B274E46EC00EC289B /* APP ICONS */; };
 		CFFD4E2927451116004B2849 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFD4E2827451116004B2849 /* Tutorial.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +67,6 @@
 		95F5906F274B9BD800EC289B /* TappableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TappableImageView.swift; path = Coloround/ColorPickerView/TappableImageView.swift; sourceTree = SOURCE_ROOT; };
 		95F59071274B9BDE00EC289B /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Color+Extension.swift"; path = "Coloround/ColorPickerView/Color+Extension.swift"; sourceTree = SOURCE_ROOT; };
 		95F59073274BA1A900EC289B /* Synth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Synth.swift; sourceTree = "<group>"; };
-		95F5907B274E46EC00EC289B /* APP ICONS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "APP ICONS"; path = "../../../../../Downloads/APP ICONS"; sourceTree = "<group>"; };
 		CFFD4E2827451116004B2849 /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,7 +120,6 @@
 				95AC3828274A72790057A3EA /* Logic */,
 				95AC3826274A725C0057A3EA /* Views */,
 				9507D1B42743D0CD002DE679 /* Assets.xcassets */,
-				95F5907B274E46EC00EC289B /* APP ICONS */,
 				9507D1C02743D0CE002DE679 /* ColoroundTests */,
 				9507D1B62743D0CE002DE679 /* Preview Content */,
 			);
@@ -287,7 +284,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9507D1B82743D0CE002DE679 /* Preview Assets.xcassets in Resources */,
-				95F5907C274E46EC00EC289B /* APP ICONS in Resources */,
 				9507D1B52743D0CD002DE679 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
