@@ -150,10 +150,10 @@ struct ThirdScreen: View {
             }
             
             VStack(spacing: 60){
-                Text("Choose one of the RGB axes and click play to listen how your colors sound")
+                Text("Choose one of the RGB axes and click play to listen to how your colors sound")
                     .fontWeight(.regular)
                     .multilineTextAlignment(.leading)
-                    .padding([.top, .leading, .trailing], 30.0)
+                    .padding([.top, .leading, .trailing], 28.0)
                     .font(.system(size: 20))
                 
                 

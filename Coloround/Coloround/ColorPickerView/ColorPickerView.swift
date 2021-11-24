@@ -121,7 +121,7 @@ struct ColorPickerView: View {
         
         .navigationBarTitleDisplayMode(.inline)
         .actionSheet(isPresented: $showingActionSheet) {
-            ActionSheet(title: Text("Image soure"), message: Text("Select where to pick an image"), buttons: [
+            ActionSheet(title: Text("Image source"), message: Text("Select from where the image will be picked"), buttons: [
                 .default(Text("Camera")) {
                     sourceType = .camera
                     showingImagePicker = true
